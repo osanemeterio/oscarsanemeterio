@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "https://www.oscarsanemeterio.es/*"
-  to = "https://oscarsanemeterio.es/:splat"
-  status = 301
-  force = true
