@@ -295,7 +295,18 @@ function App() {
             </button>
           </form>
         </div>
-      </section>
+     <div className="text-center mt-16">
+  <img src="/logo.png" alt="Conexión Pública" className="h-20 mx-auto mb-4" />
+  <p>
+    <a 
+      href="https://conexionpublica.es" 
+      className="text-[#39bdf5] hover:underline text-lg font-medium"
+      target="_blank"
+    >
+      Conoce mi proyecto editorial <strong>Conexión Pública</strong>
+    </a>
+  </p>
+</div> </section>
 
       {/* Footer */}
       <footer className="bg-[#5a5b7f] text-white py-16 px-4 relative overflow-hidden">
@@ -303,12 +314,7 @@ function App() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             <div className="mb-8 md:mb-0 text-center md:text-left">
-              <div className="inline-block p-3 rounded-xl backdrop-blur-sm bg-white/5 mb-4">
-                <img src="/logo.png" alt="Conexión Pública" className="h-12" />
-              </div>
-              <p className="text-white/90 text-lg">
-                Potenciamos organizaciones con propósito
-              </p>
+        
             </div>
             <div className="flex space-x-6">
               <a href="https://www.linkedin.com/in/osanemeterio/" className="text-[#39bdf5] hover:text-white transition-colors duration-300 p-2 rounded-lg hover:bg-white/10">
