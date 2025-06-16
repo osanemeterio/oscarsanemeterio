@@ -193,12 +193,12 @@ function App() {
               <p className="text-lg md:text-xl mb-8 text-white/90 leading-relaxed">
                 Fundador de Conexión Pública, consultor, formador y creador del pódcast del mismo nombre, especializado en comunicación con IA para pymes, ONG e instituciones.
               </p>
-              <a 
-                href="https://conexionpublica.es/about/"
-                className="btn-primary inline-flex items-center space-x-2 text-lg"
-              >
-                <span>Más sobre Óscar</span>
-              </a>
+           <a 
+  href="#contacto"
+  className="btn-primary inline-flex items-center space-x-2 text-lg"
+>
+  <span>Más sobre Óscar</span>
+</a>
             </div>
           </div>
         </div>
@@ -241,7 +241,7 @@ function App() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-20 px-4 bg-white">
+      <section id="contacto" className="py-20 px-4 bg-white">
         <div className="max-w-2xl mx-auto">
           <h2 className="fade-in text-4xl md:text-5xl font-bold text-center mb-16 text-[#5a5b7f]">
             Contáctanos
