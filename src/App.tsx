@@ -106,6 +106,8 @@ function App() {
   Óscar San Emeterio
 </h2>
 <hr className="w-16 border-t-2 border-[#39bdf5] mx-auto my-6" />
+              <p className="text-lg text-white/70 mb-6">Consultor en comunicación e IA aplicada</p>
+              
             </div>
           
           </div>
