@@ -102,17 +102,11 @@ function App() {
         <div className="max-w-5xl mx-auto text-center text-white relative z-10">
           <div className="fade-in mb-8">
             <div className="text-center mb-6">
-              <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4">
+              <h2 className="text-4xl md:text-6xl font-semibold text-white mb-4">
                 Óscar San Emeterio
               </h2>
             </div>
-            <div className="inline-block p-4 rounded-2xl backdrop-blur-sm bg-white/5 mb-8">
-              <img 
-                src="/logo.png" 
-                alt="Conexión Pública" 
-                className="h-48 md:h-64 mx-auto drop-shadow-2xl"
-              />
-            </div>
+          
           </div>
           <h1 className="fade-in text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             Servicios estratégicos de<br />
@@ -136,18 +130,18 @@ function App() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             {coreServices.map((service, index) => (
-              <a key={index} href="https://conexionpublica.es/mis-proyectos-actuales/" className="slide-up service-card text-center block cursor-pointer">
-                <div className="mb-4 flex justify-center">
-                  {service.icon}
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {service.description}
-                </p>
-              </a>
-            ))}
+  <div key={index} className="slide-up service-card text-center block">
+    <div className="mb-4 flex justify-center">
+      {service.icon}
+    </div>
+    <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
+      {service.title}
+    </h3>
+    <p className="text-gray-600 leading-relaxed">
+      {service.description}
+    </p>
+  </div>
+))}
           </div>
         </div>
       </section>
@@ -165,22 +159,18 @@ function App() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {extendedServices.map((service, index) => (
-              <a 
-                key={index} 
-                href="https://conexionpublica.es/servicios-profesionales/"
-                className="slide-up extended-service-card block cursor-pointer"
-              >
-                <div className="mb-4">
-                  {service.icon}
-                </div>
-                <h3 className="text-xl font-bold mb-4 text-[#5a5b7f]">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {service.description}
-                </p>
-              </a>
-            ))}
+  <div key={index} className="slide-up extended-service-card block">
+    <div className="mb-4">
+      {service.icon}
+    </div>
+    <h3 className="text-xl font-bold mb-4 text-[#5a5b7f]">
+      {service.title}
+    </h3>
+    <p className="text-gray-600 leading-relaxed">
+      {service.description}
+    </p>
+  </div>
+))}
           </div>
         </div>
       </section>
