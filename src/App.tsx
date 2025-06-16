@@ -102,9 +102,10 @@ function App() {
         <div className="max-w-5xl mx-auto text-center text-white relative z-10">
           <div className="fade-in mb-8">
             <div className="text-center mb-6">
-              <h2 className="text-4xl md:text-6xl font-semibold text-white mb-4">
-                Óscar San Emeterio
-              </h2>
+              <h2 className="text-4xl md:text-6xl font-semibold text-white mb-2">
+  Óscar San Emeterio
+</h2>
+<hr className="w-16 border-t-2 border-[#39bdf5] mx-auto my-6" />
             </div>
           
           </div>
