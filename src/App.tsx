@@ -204,6 +204,14 @@ function App() {
 </a>
             </div>
           </div>
+<div className="mt-16 text-center">
+  <a 
+    href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3dPNmLgARl5QQtwFkO6oBuSsCHnBPkow5biWhKCdEBM7V-FYwHH3omucOgrgZqVDR5RubmXYuc"
+    className="btn-primary text-lg font-semibold inline-block"
+  >
+    Solicita una consulta gratuita
+  </a>
+</div>
         </div>
       </section>
 
