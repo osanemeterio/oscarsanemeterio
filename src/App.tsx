@@ -106,12 +106,13 @@ function App() {
   Óscar San Emeterio
 </h2>
 <hr className="w-16 border-t-2 border-[#39bdf5] mx-auto my-6" />
-              <p className="text-lg text-white/70 mb-6">Consultor en comunicación e IA aplicada</p>
-              
-            </div>
-          
-          </div>
-          <h1 className="fade-in text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+              <p className="text-base font-medium text-white/80 mb-6">
+  Consultor en comunicación e IA aplicada
+</p>
+<h1 className="text-4xl sm:text-5xl font-bold text-white">
+  Servicios estratégicos de <span className="text-sky-400">comunicación e IA</span><br />
+  para organizaciones con propósito
+</h1> className="fade-in text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             Servicios estratégicos de<br />
             <span className="text-[#39bdf5]">comunicación e IA</span><br />
             para organizaciones con propósito
