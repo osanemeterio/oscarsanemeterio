@@ -190,9 +190,9 @@ function App() {
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white/20">
             <div className="slide-up text-white">
-              <p className="text-xl md:text-2xl mb-8 leading-relaxed">
-                Con más de 15 años de experiencia en comunicación institucional y un enfoque estratégico centrado en la innovación, Óscar ayuda a organizaciones a transformar su mensaje aplicando inteligencia artificial y narrativa profesional.
-              </p>
+             <p className="text-xl md:text-2xl mb-8 leading-relaxed">
+  Con más de 15 años de experiencia en comunicación institucional y un enfoque estratégico centrado en la innovación, ayudo a organizaciones a transformar su mensaje aplicando inteligencia artificial y narrativa profesional.
+</p>
              <p className="text-sm text-white mt-4">
   Fundador de <a href="https://conexionpublica.es" target="_blank" rel="noopener noreferrer" className="underline text-blue-300 hover:text-white">Conexión Pública</a>, un proyecto editorial sobre comunicación e inteligencia artificial. También soy consultor, formador y creador del pódcast del mismo nombre, especializado en IA aplicada a la comunicación para pymes, ONG e instituciones.
 </p>
