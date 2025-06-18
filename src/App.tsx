@@ -153,9 +153,9 @@ function App() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="fade-in text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f]">
-              Nuestros Servicios
-            </h2>
+           <h2 className="fade-in text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f]">
+  Servicios
+</h2>
             <p className="fade-in text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Soluciones profesionales en comunicación e IA para impulsar tu organización en Cantabria
             </p>
@@ -216,8 +216,8 @@ function App() {
               Mantente Informado
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-8">
-              Suscríbete a nuestro boletín para recibir las últimas actualizaciones sobre comunicación e inteligencia artificial
-            </p>
+  Suscríbete a mi boletín para recibir novedades sobre comunicación e inteligencia artificial.
+</p>
           </div>
           <form onSubmit={handleNewsletterSubmit} className="slide-up max-w-lg mx-auto">
             <div className="flex flex-col sm:flex-row gap-4 mb-4">
@@ -247,8 +247,8 @@ function App() {
       <section id="contacto" className="py-20 px-4 bg-white">
         <div className="max-w-2xl mx-auto">
           <h2 className="fade-in text-4xl md:text-5xl font-bold text-center mb-16 text-[#5a5b7f]">
-            Contáctanos
-          </h2>
+  Ponte en contacto conmigo
+</h2>
           <form onSubmit={handleSubmit} className="slide-up bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100">
             <div className="mb-6">
               <label htmlFor="nombre" className="block text-[#5a5b7f] font-semibold mb-2">
