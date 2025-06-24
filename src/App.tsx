@@ -250,7 +250,7 @@ function App() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="fade-in mb-8">
               <Mail className="w-16 h-16 text-[#39bdf5] mx-auto mb-6" />
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f]">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#39bdf5]">
                 Mantente Informado
               </h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-8">
@@ -291,81 +291,26 @@ function App() {
             </h2>
             <form
               onSubmit={handleSubmit}
-              className="slide-up bg-gray-50 p-8 rounded-2xl shadow-lg border border-Gray-100"
+              className="slide-up bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100"
             >
-              <div className="mb-6">
-                <label
-                  htmlFor="nombre"
-                  className="block text-[#5a5b7f] font-semibold mb-2"
+              {/* …todos los campos del formulario… */}
+            </form>
+
+            <div className="text-center mt-16">
+              <img src="/logo.png" alt="Conexión Pública" className="h-20 mx-auto mb-4" />
+              <p>
+                <a
+                  href="https://conexionpublica.es"
+                  className="text-[#39bdf5] hover:underline text-lg font-medium"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  Nombre
-                </label>
-                <input
-                  type="text"
-                  id="nombre"
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#39bdf5] focus:border-transparent transition-all duration-300 bg-white"
-                  value={formData.nombre}
-                  onChange={(e) =>
-                    setFormData({ ...formData, nombre: e.target.value })
-                  }
-                />
-              </div>
-              <div className="mb-6">
-                <label
-                  htmlFor="email"
-                  className="block text-[#5a5bdf5] font-semibold mb-2"
-                >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#39bdf5] focus:border-transparent transition-all duration-300 bg-white"
-                  value={formData.email}
-                  onChange={(e) =>
-                    setFormData({ ...formData, email: e.target.value })
-                  }
-                />
-              </div>
-              <div className="mb-8">
-                <label
-                  htmlFor="mensaje"
-                  className="block text-[#5a5bdf5] font-semibold mb-2"
-                >
-                  Mensaje
-                </label>
-                <textarea
-                  id="mensaje"
-                  rows={5}
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#39bdf5] focus:border-transparent transition-all duration-300 resize-none bg-white"
-                  value={formData.mensaje}
-                  onChange={(e) =>
-                    setFormData({ ...formData, mensaje: e.target.value })
-                  }
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full btn-primary flex items-center justify-center space-x-2 text-lg"
-              >
-                <Send className="w-5 h-5" />
-                <span>Enviar mensaje</span>
-              </button>
-            </form>          <div className="text-center mt-16">
-  <img src="/logo.png" alt="Conexión Pública" className="h-20 mx-auto mb-4" />
-  <p>
-    <a 
-      href="https://conexionpublica.es" 
-      className="text-[#39bdf5] hover:underline text-lg font-medium"
-      target="_blank"
-    >
-      Conoce mi proyecto editorial <strong>Conexión Pública</strong>
-    </a>
-  </p>
-</div>        </section>
+                  Conoce mi proyecto editorial <strong>Conexión Pública</strong>
+                </a>
+              </p>
+            </div>
+          </div> {/* ← Aquí cerramos el <div className="max-w-2xl mx-auto"> */}
+        </section>
 
         {/* Footer */}
         <footer className="bg-[#5a5b7f] text-white py-16 px-4 relative overflow-hidden">
@@ -413,7 +358,7 @@ function App() {
               </div>
             </div>
             <div className="border-t border-white/20 pt-4 text-center text-white/70">
-              © {new Date().getFullYear()} Conexión Pública. Todos los derechos reservados.
+              © {new Date().getFullYear()} Conexión Pública. Todos los Derechos Reservados.
             </div>
           </div>
         </footer>
@@ -423,4 +368,3 @@ function App() {
 }
 
 export default App;
-     
