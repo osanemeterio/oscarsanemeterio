@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'Add commentMore actions
+import { useState, useEffect } from 'react'
 import { MessageSquare, Brain, FileText, Send, Linkedin, Twitter, Cpu, Building2, GraduationCap, PenTool, Users, BarChart3, Mail, User } from 'lucide-react'
 
 function App() {
