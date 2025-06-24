@@ -1,32 +1,21 @@
 import { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { MessageSquare, Brain, FileText, Send, Linkedin, Twitter, Cpu, Building2, GraduationCap, PenTool, Users, BarChart3, Mail, User } from 'lucide-react'
+import ConsultoriaEnComunicacion from './pages/ConsultoriaEnComunicacion'
 
-function App() {
-  const [formData, setFormData] = useState({
-    nombre: '',
-    email: '',
-    mensaje: ''
-  })
-
+function Landing() {
+  const [formData, setFormData] = useState({ nombre: '', email: '', mensaje: '' })
   const [newsletterEmail, setNewsletterEmail] = useState('')
 
   useEffect(() => {
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -30px 0px'
-    }
-
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible')
-        }
+        if (entry.isIntersecting) entry.target.classList.add('visible')
       })
-    }, observerOptions)
+    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' })
 
     const animatedElements = document.querySelectorAll('.fade-in, .slide-up')
     animatedElements.forEach((el) => observer.observe(el))
-
     return () => observer.disconnect()
   }, [])
 
@@ -47,11 +36,12 @@ function App() {
     {
       icon: <MessageSquare className="w-10 h-10 text-[#39bdf5]" />,
       title: "Consultoría en Comunicación",
-      description: "Estrategias efectivas para conectar con tu audiencia"
+      description: "Estrategias efectivas para conectar con tu audiencia",
+      link: "/consultoria-en-comunicacion"
     },
     {
       icon: <Brain className="w-10 h-10 text-[#39bdf5]" />,
-      title: "Capacitación en IA", 
+      title: "Capacitación en IA",
       description: "Formación estratégica en herramientas de inteligencia artificial"
     },
     {
@@ -95,281 +85,25 @@ function App() {
   ]
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-[#5a5b7f] min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#5a5b7f] via-[#5a5b7f] to-[#4a4b6f] opacity-90"></div>
-        <div className="max-w-5xl mx-auto text-center text-white relative z-10">
-          <div className="fade-in mb-8">
-            <div className="text-center mb-6">
-              <h2 className="text-4xl md:text-6xl font-semibold text-white mb-2">
-  Óscar San Emeterio
-</h2>
-<hr className="w-16 border-t-2 border-[#39bdf5] mx-auto my-6" />
-              <p className="text-base font-medium text-white/80 mb-6">
-  Consultor en comunicación e IA aplicada
-</p>
-<h1 className="text-4xl sm:text-5xl font-bold text-white">
-  Servicios estratégicos de <span className="text-sky-400">comunicación e IA</span><br />
-  para organizaciones con propósito
-</h1> className="fade-in text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            Servicios estratégicos de<br />
-            <span className="text-[#39bdf5]">comunicación e IA</span><br />
-            para organizaciones con propósito
-          </h1>
-          <p className="fade-in text-xl md:text-2xl mb-12 text-white/90 max-w-4xl mx-auto leading-relaxed">
-            Potenciamos tu impacto a través de estrategia, tecnología y creatividad
-          </p>
-          <a 
-            href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3dPNmLgARl5QQtwFkO6oBuSsCHnBPkow5biWhKCdEBM7V-FYwHH3omucOgrgZqVDR5RubmXYuc"
-            className="fade-in btn-primary text-lg font-semibold inline-block"
-          >
-            Solicita una consulta gratuita
-          </a>
-        </div>
-      </section>
-
-      {/* Core Services Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8">
-            {coreServices.map((service, index) => (
-  <div key={index} className="slide-up service-card text-center block">
-    <div className="mb-4 flex justify-center">
-      {service.icon}
+    <div>
+      {/* Aquí va TODO el contenido de tu web tal como ya lo tienes */}
+      {/* En la sección de servicios, añade el atributo href a los que quieres convertir en rutas */}
+      {/* Por ejemplo: */}
+      {/* <a href="/consultoria-en-comunicacion">...</a> */}
+      {/* Si quieres, luego te ayudo a convertirlos todos en <Link> en lugar de <a> */}
+      {/* El resto lo mantienes igual */}
     </div>
-    <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
-      {service.title}
-    </h3>
-    <p className="text-gray-600 leading-relaxed">
-      {service.description}
-    </p>
-  </div>
-))}
-          </div>
-        </div>
-      </section>
+  )
+}
 
-      {/* Extended Services Section */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-           <h2 className="fade-in text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f]">
-  Servicios
-</h2>
-            <p className="fade-in text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Soluciones profesionales en comunicación e IA para impulsar tu organización en Cantabria
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {extendedServices.map((service, index) => (
-  <div key={index} className="slide-up extended-service-card block">
-    <div className="mb-4">
-      {service.icon}
-    </div>
-    <h3 className="text-xl font-bold mb-4 text-[#5a5b7f]">
-      {service.title}
-    </h3>
-    <p className="text-gray-600 leading-relaxed">
-      {service.description}
-    </p>
-  </div>
-))}
-          </div>
-        </div>
-      </section>
-
-      {/* Personal Introduction Section */}
-      <section className="py-20 px-4 bg-[#5a5b7f] relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#5a5b7f] via-[#5a5b7f] to-[#4a4b6f] opacity-90"></div>
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <div className="fade-in mb-8">
-            <User className="w-16 h-16 text-[#39bdf5] mx-auto mb-6" />
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              Dirigido por Óscar San Emeterio
-            </h2>
-          </div>
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white/20">
-            <div className="slide-up text-white">
-             <p className="text-xl md:text-2xl mb-8 leading-relaxed">
-  Con más de 15 años de experiencia en comunicación institucional y un enfoque estratégico centrado en la innovación, ayudo a organizaciones a transformar su mensaje aplicando inteligencia artificial y narrativa profesional.
-</p>
-             <p className="text-sm text-white mt-4">
-  Fundador de <a href="https://conexionpublica.es" target="_blank" rel="noopener noreferrer" className="underline text-blue-300 hover:text-white">Conexión Pública</a>, un proyecto editorial sobre comunicación e inteligencia artificial. También soy consultor, formador y creador del pódcast del mismo nombre, especializado en IA aplicada a la comunicación para pymes, ONG e instituciones.
-</p>
-           <a 
-  href="#contacto"
-  className="btn-primary inline-flex items-center space-x-2 text-lg"
->
-  <span>Más sobre Óscar</span>
-</a>
-            </div>
-          </div>
-<div className="mt-16 text-center">
-  <a 
-    href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3dPNmLgARl5QQtwFkO6oBuSsCHnBPkow5biWhKCdEBM7V-FYwHH3omucOgrgZqVDR5RubmXYuc"
-    className="btn-primary text-lg font-semibold inline-block"
-  >
-    Solicita una consulta gratuita
-  </a>
-</div>
-        </div>
-      </section>
-
-      {/* Newsletter Section */}
-      <section className="py-20 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="fade-in mb-8">
-            <Mail className="w-16 h-16 text-[#39bdf5] mx-auto mb-6" />
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f]">
-              Mantente Informado
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-8">
-  Suscríbete a mi boletín para recibir novedades sobre comunicación e inteligencia artificial.
-</p>
-          </div>
-          <form onSubmit={handleNewsletterSubmit} className="slide-up max-w-lg mx-auto">
-            <div className="flex flex-col sm:flex-row gap-4 mb-4">
-              <input
-                type="email"
-                placeholder="Tu dirección de email"
-                required
-                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#39bdf5] focus:border-transparent transition-all duration-300"
-                value={newsletterEmail}
-                onChange={(e) => setNewsletterEmail(e.target.value)}
-              />
-              <button
-                type="submit"
-                className="btn-newsletter whitespace-nowrap"
-              >
-                Suscribirme
-              </button>
-            </div>
-            <p className="text-sm text-gray-500 leading-relaxed">
-              Respetamos tu privacidad. Puedes cancelar la suscripción en cualquier momento.
-            </p>
-          </form>
-        </div>
-      </section>
-
-      {/* Contact Form Section */}
-      <section id="contacto" className="py-20 px-4 bg-white">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="fade-in text-4xl md:text-5xl font-bold text-center mb-16 text-[#5a5b7f]">
-  Ponte en contacto conmigo
-</h2>
-          <form onSubmit={handleSubmit} className="slide-up bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100">
-            <div className="mb-6">
-              <label htmlFor="nombre" className="block text-[#5a5b7f] font-semibold mb-2">
-                Nombre
-              </label>
-              <input
-                type="text"
-                id="nombre"
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#39bdf5] focus:border-transparent transition-all duration-300 bg-white"
-                value={formData.nombre}
-                onChange={(e) => setFormData({...formData, nombre: e.target.value})}
-              />
-            </div>
-            <div className="mb-6">
-              <label htmlFor="email" className="block text-[#5a5b7f] font-semibold mb-2">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#39bdf5] focus:border-transparent transition-all duration-300 bg-white"
-                value={formData.email}
-                onChange={(e) => setFormData({...formData, email: e.target.value})}
-              />
-            </div>
-            <div className="mb-8">
-              <label htmlFor="mensaje" className="block text-[#5a5b7f] font-semibold mb-2">
-                Mensaje
-              </label>
-              <textarea
-                id="mensaje"
-                rows={5}
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#39bdf5] focus:border-transparent transition-all duration-300 resize-none bg-white"
-                value={formData.mensaje}
-                onChange={(e) => setFormData({...formData, mensaje: e.target.value})}
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full btn-primary flex items-center justify-center space-x-2 text-lg"
-            >
-              <Send className="w-5 h-5" />
-              <span>Enviar mensaje</span>
-            </button>
-          </form>
-        </div>
-     <div className="text-center mt-16">
-  <img src="/logo.png" alt="Conexión Pública" className="h-20 mx-auto mb-4" />
-  <p>
-    <a 
-      href="https://conexionpublica.es" 
-      className="text-[#39bdf5] hover:underline text-lg font-medium"
-      target="_blank"
-    >
-      Conoce mi proyecto editorial <strong>Conexión Pública</strong>
-    </a>
-  </p>
-</div> </section>
-
-      {/* Footer */}
-      <footer className="bg-[#5a5b7f] text-white py-16 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#5a5b7f] via-[#5a5b7f] to-[#4a4b6f] opacity-90"></div>
-        <div className="max-w-6xl mx-auto relative z-10">
-          <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-            <div className="mb-8 md:mb-0 text-center md:text-left">
-        
-            </div>
-            <div className="flex space-x-6">
-              <a href="https://www.linkedin.com/in/osanemeterio/" className="text-[#39bdf5] hover:text-white transition-colors duration-300 p-2 rounded-lg hover:bg-white/10">
-                <Linkedin className="w-7 h-7" />
-              </a>
-              <a href="https://x.com/osanemeterio" className="text-[#39bdf5] hover:text-white transition-colors duration-300 p-2 rounded-lg hover:bg-white/10">
-                <Twitter className="w-7 h-7" />
-              </a>
-            </div>
-          </div>
-          
-          {/* Legal Links */}
-          <div className="border-t border-white/20 pt-6 pb-4">
-            <div className="flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-8">
-              <a 
-                href="https://conexionpublica.es/terminos-y-condiciones-2/" 
-                className="text-white/80 hover:text-[#39bdf5] transition-colors duration-300 text-sm"
-              >
-                Términos y condiciones
-              </a>
-              <span className="hidden md:inline text-white/40">•</span>
-              <a 
-                href="https://conexionpublica.es/politica-privacidad/" 
-                className="text-white/80 hover:text-[#39bdf5] transition-colors duration-300 text-sm"
-              >
-                Política de privacidad
-              </a>
-              <span className="hidden md:inline text-white/40">•</span>
-              <a 
-                href="https://conexionpublica.es/aviso-legal-2/" 
-                className="text-white/80 hover:text-[#39bdf5] transition-colors duration-300 text-sm"
-              >
-                Aviso legal
-              </a>
-            </div>
-          </div>
-          
-          <div className="border-t border-white/20 pt-4 text-center text-white/70">
-            © 2024 Conexión Pública. Todos los derechos reservados.
-          </div>
-        </div>
-      </footer>
-    </div>
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/consultoria-en-comunicacion" element={<ConsultoriaEnComunicacion />} />
+      </Routes>
+    </Router>
   )
 }
 
