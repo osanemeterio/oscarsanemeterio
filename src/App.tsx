@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { MessageSquare, Brain, FileText, Send, Linkedin, Twitter, Cpu, Building2, GraduationCap, PenTool, Users, BarChart3, Mail, User } from 'lucide-react'
+import { MessageSquare, Brain, FileText } from 'lucide-react'
 import ConsultoriaEnComunicacion from './pages/ConsultoriaEnComunicacion'
 
 function Landing() {
@@ -18,19 +18,6 @@ function Landing() {
     animatedElements.forEach((el) => observer.observe(el))
     return () => observer.disconnect()
   }, [])
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    const subject = encodeURIComponent('Consulta desde Conexión Pública')
-    const body = encodeURIComponent(`Nombre: ${formData.nombre}\nEmail: ${formData.email}\n\nMensaje:\n${formData.mensaje}`)
-    window.location.href = `mailto:osanemeterio@conexionpublica.es?subject=${subject}&body=${body}`
-    setFormData({ nombre: '', email: '', mensaje: '' })
-  }
-
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    window.location.href = 'https://osanemeterio.substack.com/subscribe'
-  }
 
   const coreServices = [
     {
@@ -51,47 +38,32 @@ function Landing() {
     }
   ]
 
-  const extendedServices = [
-    {
-      icon: <Cpu className="w-8 h-8 text-[#39bdf5]" />,
-      title: "Consultoría en IA",
-      description: "Implementación estratégica de IA para comunicación efectiva y optimización de procesos organizacionales."
-    },
-    {
-      icon: <Building2 className="w-8 h-8 text-[#39bdf5]" />,
-      title: "Comunicación Institucional",
-      description: "Estrategias de comunicación especializadas para instituciones públicas y privadas en Cantabria."
-    },
-    {
-      icon: <GraduationCap className="w-8 h-8 text-[#39bdf5]" />,
-      title: "Formación en IA",
-      description: "Cursos especializados para equipos sobre el uso práctico de IA en tareas diarias y comunicación."
-    },
-    {
-      icon: <PenTool className="w-8 h-8 text-[#39bdf5]" />,
-      title: "Creación de Contenidos",
-      description: "Redacción profesional orientada a SEO para canales digitales y posicionamiento web."
-    },
-    {
-      icon: <Users className="w-8 h-8 text-[#39bdf5]" />,
-      title: "Talleres Prácticos",
-      description: "Aplicación real de herramientas de IA en comunicación con casos prácticos y metodologías probadas."
-    },
-    {
-      icon: <BarChart3 className="w-8 h-8 text-[#39bdf5]" />,
-      title: "Análisis de Datos",
-      description: "Métricas avanzadas y optimización para estrategia digital con enfoque en resultados medibles."
-    }
-  ]
-
   return (
-    <div>
-      {/* Aquí va TODO el contenido de tu web tal como ya lo tienes */}
-      {/* En la sección de servicios, añade el atributo href a los que quieres convertir en rutas */}
-      {/* Por ejemplo: */}
-      {/* <a href="/consultoria-en-comunicacion">...</a> */}
-      {/* Si quieres, luego te ayudo a convertirlos todos en <Link> en lugar de <a> */}
-      {/* El resto lo mantienes igual */}
+    <div className="min-h-screen bg-gray-900 text-white px-4 py-20 text-center">
+      <h2 className="text-base font-medium text-white/80 mb-6">
+        Consultor en comunicación e IA aplicada
+      </h2>
+      <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+        Servicios estratégicos de <span className="text-sky-400">comunicación e IA</span><br />
+        para organizaciones con propósito
+      </h1>
+      <p className="text-white/70 text-lg max-w-3xl mx-auto mb-12">
+        Potenciamos tu impacto a través de estrategia, tecnología y creatividad
+      </p>
+
+      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {coreServices.map((service, index) => (
+          <a
+            key={index}
+            href={service.link || '#'}
+            className="bg-gray-800 hover:bg-sky-700 p-6 rounded-xl transition block text-left"
+          >
+            <div className="mb-4">{service.icon}</div>
+            <h3 className="text-xl font-semibold text-white mb-2">{service.title}</h3>
+            <p className="text-sm text-white/70">{service.description}</p>
+          </a>
+        ))}
+      </div>
     </div>
   )
 }
