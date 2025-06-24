@@ -1,5 +1,4 @@
 [[redirects]]
-  from = "http://*"
-  to = "https://oscarsanemeterio.es/:splat"
-  status = 301
-  force = true
+  from = "/*"
+  to = "/index.html"
+  status = 200
