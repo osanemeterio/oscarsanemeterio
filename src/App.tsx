@@ -2,7 +2,12 @@ import { useState, useEffect } from 'react'
 import { MessageSquare, Brain, FileText, Send, Linkedin, Twitter, Cpu, Building2, GraduationCap, PenTool, Users, BarChart3, Mail, User } from 'lucide-react'
 
 function App() {
-  const [formData, setFormData] = useState({ nombre: '', email: '', mensaje: '' })
+  const [formData, setFormData] = useState({
+    nombre: '',
+    email: '',
+    mensaje: ''
+  })
+
   const [newsletterEmail, setNewsletterEmail] = useState('')
 
   useEffect(() => {
@@ -46,7 +51,7 @@ function App() {
     },
     {
       icon: <Brain className="w-10 h-10 text-[#39bdf5]" />,
-      title: "Capacitación en IA",
+      title: "Capacitación en IA", 
       description: "Formación estratégica en herramientas de inteligencia artificial"
     },
     {
@@ -90,10 +95,8 @@ function App() {
   ]
 
   return (
-    <div className="min-h-screen bg-white">
-      <h1 className="text-center text-4xl text-[#5a5b7f] font-bold py-10 px-4">
-        ⚠️ Página en reconstrucción: estamos restaurando el contenido original
-      </h1>
+    <div className="min-h-screen">
+      <h1 className="text-4xl font-bold text-center text-[#5a5b7f] mt-20">Estamos trabajando en mejoras. Vuelve en unos minutos.</h1>
     </div>
   )
 }
