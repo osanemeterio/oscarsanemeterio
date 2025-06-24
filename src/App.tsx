@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { MessageSquare, Brain, FileText, Send, Linkedin, Twitter, Cpu, Building2, GraduationCap, PenTool, Users, BarChart3, Mail, User } from 'lucide-react'
+import { MessageSquare, Brain, FileText, Send, Cpu, Building2, GraduationCap, PenTool, Users, BarChart3, Mail, User } from 'lucide-react'
 
 function App() {
   const [formData, setFormData] = useState({
@@ -45,52 +45,34 @@ function App() {
 
   const coreServices = [
     {
-      icon: <MessageSquare className="w-10 h-10 text-[#39bdf5]" />,
-      title: "Consultoría en Comunicación",
-      description: "Estrategias efectivas para conectar con tu audiencia"
+      icon: <MessageSquare className="w-10 h-10 text-[#39bdf5]" />, title: "Consultoría en Comunicación", description: "Estrategias efectivas para conectar con tu audiencia"
     },
     {
-      icon: <Brain className="w-10 h-10 text-[#39bdf5]" />,
-      title: "Capacitación en IA", 
-      description: "Formación estratégica en herramientas de inteligencia artificial"
+      icon: <Brain className="w-10 h-10 text-[#39bdf5]" />, title: "Capacitación en IA", description: "Formación estratégica en herramientas de inteligencia artificial"
     },
     {
-      icon: <FileText className="w-10 h-10 text-[#39bdf5]" />,
-      title: "Producción de Contenidos",
-      description: "Contenido web, podcasts y cursos online de calidad"
+      icon: <FileText className="w-10 h-10 text-[#39bdf5]" />, title: "Producción de Contenidos", description: "Contenido web, podcasts y cursos online de calidad"
     }
   ]
 
   const extendedServices = [
     {
-      icon: <Cpu className="w-8 h-8 text-[#39bdf5]" />,
-      title: "Consultoría en IA",
-      description: "Implementación estratégica de IA para comunicación efectiva y optimización de procesos organizacionales."
+      icon: <Cpu className="w-8 h-8 text-[#39bdf5]" />, title: "Consultoría en IA", description: "Implementación estratégica de IA para comunicación efectiva y optimización de procesos organizacionales."
     },
     {
-      icon: <Building2 className="w-8 h-8 text-[#39bdf5]" />,
-      title: "Comunicación Institucional",
-      description: "Estrategias de comunicación especializadas para instituciones públicas y privadas en Cantabria."
+      icon: <Building2 className="w-8 h-8 text-[#39bdf5]" />, title: "Comunicación Institucional", description: "Estrategias de comunicación especializadas para instituciones públicas y privadas en Cantabria."
     },
     {
-      icon: <GraduationCap className="w-8 h-8 text-[#39bdf5]" />,
-      title: "Formación en IA",
-      description: "Cursos especializados para equipos sobre el uso práctico de IA en tareas diarias y comunicación."
+      icon: <GraduationCap className="w-8 h-8 text-[#39bdf5]" />, title: "Formación en IA", description: "Cursos especializados para equipos sobre el uso práctico de IA en tareas diarias y comunicación."
     },
     {
-      icon: <PenTool className="w-8 h-8 text-[#39bdf5]" />,
-      title: "Creación de Contenidos",
-      description: "Redacción profesional orientada a SEO para canales digitales y posicionamiento web."
+      icon: <PenTool className="w-8 h-8 text-[#39bdf5]" />, title: "Creación de Contenidos", description: "Redacción profesional orientada a SEO para canales digitales y posicionamiento web."
     },
     {
-      icon: <Users className="w-8 h-8 text-[#39bdf5]" />,
-      title: "Talleres Prácticos",
-      description: "Aplicación real de herramientas de IA en comunicación con casos prácticos y metodologías probadas."
+      icon: <Users className="w-8 h-8 text-[#39bdf5]" />, title: "Talleres Prácticos", description: "Aplicación real de herramientas de IA en comunicación con casos prácticos y metodologías probadas."
     },
     {
-      icon: <BarChart3 className="w-8 h-8 text-[#39bdf5]" />,
-      title: "Análisis de Datos",
-      description: "Métricas avanzadas y optimización para estrategia digital con enfoque en resultados medibles."
+      icon: <BarChart3 className="w-8 h-8 text-[#39bdf5]" />, title: "Análisis de Datos", description: "Métricas avanzadas y optimización para estrategia digital con enfoque en resultados medibles."
     }
   ]
 
@@ -102,16 +84,9 @@ function App() {
         <div className="max-w-5xl mx-auto text-center text-white relative z-10">
           <div className="fade-in mb-8">
             <div className="text-center mb-6">
-              <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4">
+              <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4">
                 Óscar San Emeterio
               </h2>
-            </div>
-            <div className="inline-block p-4 rounded-2xl backdrop-blur-sm bg-white/5 mb-8">
-              <img 
-                src="/logo.png" 
-                alt="Conexión Pública" 
-                className="h-48 md:h-64 mx-auto drop-shadow-2xl"
-              />
             </div>
           </div>
           <h1 className="fade-in text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
@@ -136,7 +111,7 @@ function App() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             {coreServices.map((service, index) => (
-              <a key={index} href="https://conexionpublica.es/mis-proyectos-actuales/" className="slide-up service-card text-center block cursor-pointer">
+              <div key={index} className="slide-up service-card text-center block cursor-default">
                 <div className="mb-4 flex justify-center">
                   {service.icon}
                 </div>
@@ -146,7 +121,7 @@ function App() {
                 <p className="text-gray-600 leading-relaxed">
                   {service.description}
                 </p>
-              </a>
+              </div>
             ))}
           </div>
         </div>
@@ -165,10 +140,9 @@ function App() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {extendedServices.map((service, index) => (
-              <a 
+              <div 
                 key={index} 
-                href="https://conexionpublica.es/servicios-profesionales/"
-                className="slide-up extended-service-card block cursor-pointer"
+                className="slide-up extended-service-card block cursor-default"
               >
                 <div className="mb-4">
                   {service.icon}
@@ -179,7 +153,7 @@ function App() {
                 <p className="text-gray-600 leading-relaxed">
                   {service.description}
                 </p>
-              </a>
+              </div>
             ))}
           </div>
         </div>
@@ -204,161 +178,24 @@ function App() {
                 Fundador de Conexión Pública, consultor, formador y creador del pódcast del mismo nombre, especializado en comunicación con IA para pymes, ONG e instituciones.
               </p>
               <a 
-                href="https://conexionpublica.es/about/"
+                href="#contacto"
                 className="btn-primary inline-flex items-center space-x-2 text-lg"
               >
-                <span>Más sobre Óscar</span>
+                <span>Ir al formulario de contacto</span>
               </a>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Newsletter Section */}
-      <section className="py-20 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="fade-in mb-8">
-            <Mail className="w-16 h-16 text-[#39bdf5] mx-auto mb-6" />
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f]">
-              Mantente Informado
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-8">
-              Suscríbete a nuestro boletín para recibir las últimas actualizaciones sobre comunicación e inteligencia artificial
-            </p>
-          </div>
-          <form onSubmit={handleNewsletterSubmit} className="slide-up max-w-lg mx-auto">
-            <div className="flex flex-col sm:flex-row gap-4 mb-4">
-              <input
-                type="email"
-                placeholder="Tu dirección de email"
-                required
-                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#39bdf5] focus:border-transparent transition-all duration-300"
-                value={newsletterEmail}
-                onChange={(e) => setNewsletterEmail(e.target.value)}
-              />
-              <button
-                type="submit"
-                className="btn-newsletter whitespace-nowrap"
-              >
-                Suscribirme
-              </button>
-            </div>
-            <p className="text-sm text-gray-500 leading-relaxed">
-              Respetamos tu privacidad. Puedes cancelar la suscripción en cualquier momento.
-            </p>
-          </form>
-        </div>
-      </section>
-
-      {/* Contact Form Section */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="fade-in text-4xl md:text-5xl font-bold text-center mb-16 text-[#5a5b7f]">
-            Contáctanos
-          </h2>
-          <form onSubmit={handleSubmit} className="slide-up bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100">
-            <div className="mb-6">
-              <label htmlFor="nombre" className="block text-[#5a5b7f] font-semibold mb-2">
-                Nombre
-              </label>
-              <input
-                type="text"
-                id="nombre"
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#39bdf5] focus:border-transparent transition-all duration-300 bg-white"
-                value={formData.nombre}
-                onChange={(e) => setFormData({...formData, nombre: e.target.value})}
-              />
-            </div>
-            <div className="mb-6">
-              <label htmlFor="email" className="block text-[#5a5b7f] font-semibold mb-2">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#39bdf5] focus:border-transparent transition-all duration-300 bg-white"
-                value={formData.email}
-                onChange={(e) => setFormData({...formData, email: e.target.value})}
-              />
-            </div>
-            <div className="mb-8">
-              <label htmlFor="mensaje" className="block text-[#5a5b7f] font-semibold mb-2">
-                Mensaje
-              </label>
-              <textarea
-                id="mensaje"
-                rows={5}
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#39bdf5] focus:border-transparent transition-all duration-300 resize-none bg-white"
-                value={formData.mensaje}
-                onChange={(e) => setFormData({...formData, mensaje: e.target.value})}
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full btn-primary flex items-center justify-center space-x-2 text-lg"
-            >
-              <Send className="w-5 h-5" />
-              <span>Enviar mensaje</span>
-            </button>
-          </form>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="bg-[#5a5b7f] text-white py-16 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#5a5b7f] via-[#5a5b7f] to-[#4a4b6f] opacity-90"></div>
-        <div className="max-w-6xl mx-auto relative z-10">
-          <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-            <div className="mb-8 md:mb-0 text-center md:text-left">
-              <div className="inline-block p-3 rounded-xl backdrop-blur-sm bg-white/5 mb-4">
-                <img src="/logo.png" alt="Conexión Pública" className="h-12" />
-              </div>
-              <p className="text-white/90 text-lg">
-                Potenciamos organizaciones con propósito
-              </p>
-            </div>
-            <div className="flex space-x-6">
-              <a href="https://www.linkedin.com/in/osanemeterio/" className="text-[#39bdf5] hover:text-white transition-colors duration-300 p-2 rounded-lg hover:bg-white/10">
-                <Linkedin className="w-7 h-7" />
-              </a>
-              <a href="https://x.com/osanemeterio" className="text-[#39bdf5] hover:text-white transition-colors duration-300 p-2 rounded-lg hover:bg-white/10">
-                <Twitter className="w-7 h-7" />
-              </a>
-            </div>
-          </div>
-          
-          {/* Legal Links */}
-          <div className="border-t border-white/20 pt-6 pb-4">
-            <div className="flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-8">
-              <a 
-                href="https://conexionpublica.es/terminos-y-condiciones-2/" 
-                className="text-white/80 hover:text-[#39bdf5] transition-colors duration-300 text-sm"
-              >
-                Términos y condiciones
-              </a>
-              <span className="hidden md:inline text-white/40">•</span>
-              <a 
-                href="https://conexionpublica.es/politica-privacidad/" 
-                className="text-white/80 hover:text-[#39bdf5] transition-colors duration-300 text-sm"
-              >
-                Política de privacidad
-              </a>
-              <span className="hidden md:inline text-white/40">•</span>
-              <a 
-                href="https://conexionpublica.es/aviso-legal-2/" 
-                className="text-white/80 hover:text-[#39bdf5] transition-colors duration-300 text-sm"
-              >
-                Aviso legal
-              </a>
-            </div>
-          </div>
-          
-          <div className="border-t border-white/20 pt-4 text-center text-white/70">
-            © 2024 Conexión Pública. Todos los derechos reservados.
-          </div>
+        <div className="max-w-6xl mx-auto relative z-10 text-center">
+          <p className="text-xl text-white/90 mb-4">
+            Esta página es una presentación de <a href="https://conexionpublica.es" className="underline text-[#39bdf5] hover:text-white">Conexión Pública</a>.
+          </p>
+          <p className="text-white/70 text-sm">© 2024 Conexión Pública. Todos los derechos reservados.</p>
         </div>
       </footer>
     </div>
