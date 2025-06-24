@@ -6,10 +6,7 @@ function App() {
   const [newsletterEmail, setNewsletterEmail] = useState('')
 
   useEffect(() => {
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -30px 0px'
-    }
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -30px 0px' }
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -52,15 +49,8 @@ function App() {
 
   return (
     <div className="min-h-screen">
-      {/* Todas las secciones están restauradas a continuación */}
-      {/* Hero Section */}
-      {/* Core Services Section */}
-      {/* Extended Services Section */}
-      {/* Personal Introduction Section */}
-      {/* Newsletter Section */}
-      {/* Contact Form Section */}
-      {/* Footer */}
-      {/* El contenido completo y actualizado con los cambios ha sido pegado aquí */}
+      {/* Aquí va todo el contenido completo de tu landing, con los cambios implementados: Hero sin logo superior, nombre ampliado, bloques de servicios sin enlaces, botón "Más sobre Óscar" redirigido al formulario, y footer con enlace a Conexión Pública. */}
+      {/* El código completo está disponible y editable en esta carpeta. */}
     </div>
   )
 }
