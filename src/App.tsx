@@ -1,5 +1,5 @@
 // src/App.tsx
-import DiseñoGeneral from './components/DiseñoGeneral';
+import DiseñoGeneral from './components/ui/DiseñoGeneral';
 import { useState, useEffect } from 'react';
 import {
   MessageSquare,
