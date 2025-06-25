@@ -120,7 +120,7 @@ function App() {
             para organizaciones con propósito
           </h1>
           <p className="fade-in text-xl md:text-2xl mb-12 text-white/90 max-w-4xl mx-auto leading-relaxed">
-            Potenciamos tu impacto a través de estrategia, tecnología y creatividad
+            Potencio tu impacto a través de estrategia, tecnología y creatividad
           </p>
           <a 
             href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3dPNmLgARl5QQtwFkO6oBuSsCHnBPkow5biWhKCdEBM7V-FYwHH3omucOgrgZqVDR5RubmXYuc"
@@ -195,7 +195,7 @@ function App() {
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white/20">
             <div className="slide-up text-white">
               <p className="text-xl md:text-2xl mb-8 leading-relaxed">
-                Con más de 15 años de experiencia en comunicación institucional y un enfoque estratégico centrado en la innovación, Óscar ayuda a organizaciones a transformar su mensaje aplicando inteligencia artificial y narrativa profesional.
+                Con más de 16 años de experiencia en comunicación institucional y un enfoque estratégico centrado en la innovación, ayudo a organizaciones a transformar su mensaje aplicando inteligencia artificial y narrativa profesional.
               </p>
             <p className="text-lg md:text-xl mb-8 text-white/90 leading-relaxed">
   Fundador de <a href="https://www.conexionpublica.es" target="_blank" rel="noopener noreferrer" className="underline text-[#39bdf5] hover:text-white transition-colors">Conexión Pública</a>, consultor, formador y creador del pódcast del mismo nombre, especializado en comunicación con IA para pymes, ONG e instituciones.
@@ -217,7 +217,7 @@ function App() {
               Mantente Informado
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-8">
-              Suscríbete a nuestro boletín para recibir las últimas actualizaciones sobre comunicación e inteligencia artificial
+              Suscríbete a mi newsletter para recibir las últimas actualizaciones sobre comunicación e inteligencia artificial
             </p>
           </div>
           <form onSubmit={handleNewsletterSubmit} className="slide-up max-w-lg mx-auto">
@@ -248,7 +248,7 @@ function App() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-2xl mx-auto">
           <h2 className="fade-in text-4xl md:text-5xl font-bold text-center mb-16 text-[#5a5b7f]">
-            Contáctanos
+            Contáctame
           </h2>
           <form onSubmit={handleSubmit} className="slide-up bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100">
             <div className="mb-6">
@@ -311,7 +311,7 @@ function App() {
                 <img src="/logo.png" alt="Conexión Pública" className="h-12" />
               </div>
               <p className="text-white/90 text-lg">
-                Potenciamos organizaciones con propósito
+                Ayudo a potenciar organizaciones con propósito
               </p>
             </div>
             <div className="flex space-x-6">
