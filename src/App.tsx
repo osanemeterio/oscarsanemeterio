@@ -197,15 +197,12 @@ function App() {
               <p className="text-xl md:text-2xl mb-8 leading-relaxed">
                 Con más de 15 años de experiencia en comunicación institucional y un enfoque estratégico centrado en la innovación, Óscar ayuda a organizaciones a transformar su mensaje aplicando inteligencia artificial y narrativa profesional.
               </p>
-              <p className="text-lg md:text-xl mb-8 text-white/90 leading-relaxed">
-                Fundador de Conexión Pública, consultor, formador y creador del pódcast del mismo nombre, especializado en comunicación con IA para pymes, ONG e instituciones.
-              </p>
-              <a 
-                href="https://conexionpublica.es/about/"
-                className="btn-primary inline-flex items-center space-x-2 text-lg"
-              >
-                <span>Más sobre Óscar</span>
-              </a>
+            <p className="text-lg md:text-xl mb-8 text-white/90 leading-relaxed">
+  Fundador de <a href="https://www.conexionpublica.es" target="_blank" rel="noopener noreferrer" className="underline text-[#39bdf5] hover:text-white transition-colors">Conexión Pública</a>, consultor, formador y creador del pódcast del mismo nombre, especializado en comunicación con IA para pymes, ONG e instituciones.
+</p>
+            <div className="btn-primary inline-flex items-center space-x-2 text-lg cursor-default">
+  <span>Más sobre Óscar</span>
+</div>
             </div>
           </div>
         </div>
