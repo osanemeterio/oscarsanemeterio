@@ -107,11 +107,7 @@ function App() {
               </h2>
             </div>
             <div className="inline-block p-4 rounded-2xl backdrop-blur-sm bg-white/5 mb-8">
-              <img 
-                src="/logo.png" 
-                alt="Conexión Pública" 
-                className="h-48 md:h-64 mx-auto drop-shadow-2xl"
-              />
+          
             </div>
           </div>
           <h1 className="fade-in text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
