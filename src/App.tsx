@@ -101,11 +101,15 @@ function App() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#5a5b7f] via-[#5a5b7f] to-[#4a4b6f] opacity-90"></div>
         <div className="max-w-5xl mx-auto text-center text-white relative z-10">
           <div className="fade-in mb-8">
-            <div className="text-center mb-6">
-              <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4">
-                Óscar San Emeterio
-              </h2>
-            </div>
+           <div className="text-center mb-6">
+  <h2 className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
+    Óscar San Emeterio
+  </h2>
+  <hr className="w-24 border-t-4 border-[#39bdf5] mx-auto my-4" />
+  <p className="text-xl md:text-2xl text-white/80">
+    Consultor de comunicación e inteligencia artificial
+  </p>
+</div>
             <div className="inline-block p-4 rounded-2xl backdrop-blur-sm bg-white/5 mb-8">
           
             </div>
