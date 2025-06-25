@@ -163,22 +163,47 @@ function App() {
       </p>
     </div>
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {extendedServices.map((service, index) => (
-        <div
-          key={index}
-          className="slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 transition-transform hover:scale-105 cursor-default"
-        >
-          <div className="mb-4">
-            {service.icon}
-          </div>
-          <h3 className="text-xl font-bold mb-4 text-[#5a5b7f]">
-            {service.title}
-          </h3>
-          <p className="text-gray-600 leading-relaxed">
-            {service.description}
-          </p>
+import { Link } from 'react-router-dom'
+
+// ...
+
+{extendedServices.map((service, index) => {
+  if (service.title === 'Consultoría en IA') {
+    return (
+      <Link
+        key={index}
+        to="/consultoria"
+        className="slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 transition-transform hover:scale-105 text-left no-underline"
+      >
+        <div className="mb-4">
+          {service.icon}
         </div>
-      ))}
+        <h3 className="text-xl font-bold mb-4 text-[#5a5b7f]">
+          {service.title}
+        </h3>
+        <p className="text-gray-600 leading-relaxed">
+          {service.description}
+        </p>
+      </Link>
+    )
+  }
+
+  // el resto de tarjetas sin enlace:
+  return (
+    <div
+      key={index}
+      className="slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 cursor-default text-left"
+    >
+      <div className="mb-4">{service.icon}</div>
+      <h3 className="text-xl font-bold mb-4 text-[#5a5b7f]">
+        {service.title}
+      </h3>
+      <p className="text-gray-600 leading-relaxed">
+        {service.description}
+      </p>
+    </div>
+  )
+})}
     </div>
   </div>
 </section>
