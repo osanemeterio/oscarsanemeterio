@@ -152,23 +152,36 @@ function App() {
         </div>
       </section>
 
-  {extendedServices.map((service, index) => (
-  <div 
-    key={index} 
-    className="slide-up extended-service-card block cursor-default"
-  >
-    <div className="mb-4">
-      {service.icon}
+<section className="py-20 px-4 bg-white">
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="fade-in text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f]">
+        Mis Servicios
+      </h2>
+      <p className="fade-in text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Soluciones profesionales en comunicación e IA para impulsar tu organización en Cantabria
+      </p>
     </div>
-    <h3 className="text-xl font-bold mb-4 text-[#5a5b7f]">
-      {service.title}
-    </h3>
-    <p className="text-gray-600 leading-relaxed">
-      {service.description}
-    </p>
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {extendedServices.map((service, index) => (
+        <div
+          key={index}
+          className="slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 transition-transform hover:scale-105 cursor-default"
+        >
+          <div className="mb-4">
+            {service.icon}
+          </div>
+          <h3 className="text-xl font-bold mb-4 text-[#5a5b7f]">
+            {service.title}
+          </h3>
+          <p className="text-gray-600 leading-relaxed">
+            {service.description}
+          </p>
+        </div>
+      ))}
+    </div>
   </div>
-))}
-
+</section>
       {/* Personal Introduction Section */}
       <section className="py-20 px-4 bg-[#5a5b7f] relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#5a5b7f] via-[#5a5b7f] to-[#4a4b6f] opacity-90"></div>
