@@ -165,27 +165,39 @@ function App() {
     </div>
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       {extendedServices.map((service, index) => {
-  if (service.title === 'Consultoría en IA') {
-    return (
-      <Link
-        key={index}
-        to="/consultoria"
-        className="slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 transition-transform hover:scale-105 text-left no-underline"
-      >
-        <div className="mb-4">
-          {service.icon}
-        </div>
-        <h3 className="text-xl font-bold mb-4 text-[#5a5b7f]">
-          {service.title}
-        </h3>
-        <p className="text-gray-600 leading-relaxed">
-          {service.description}
-        </p>
-      </Link>
-    )
-  }
+        // Definir las rutas para cada servicio
+        const serviceRoutes: { [key: string]: string } = {
+          'Consultoría en IA': '/consultoria',
+          'Comunicación Institucional': '/comunicacion-institucional',
+          'Formación en IA': '/formacion-ia',
+          'Creación de Contenidos': '/creacion-contenidos',
+          'Talleres Prácticos': '/talleres-practicos',
+          'Análisis de Datos': '/analisis-datos'
+        }
 
-        // el resto de tarjetas sin enlace:
+        const route = serviceRoutes[service.title]
+        
+        if (route) {
+          return (
+            <Link
+              key={index}
+              to={route}
+              className="slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 transition-transform hover:scale-105 text-left no-underline"
+            >
+              <div className="mb-4">
+                {service.icon}
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-[#5a5b7f]">
+                {service.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {service.description}
+              </p>
+            </Link>
+          )
+        }
+
+        // Fallback para tarjetas sin ruta definida
         return (
           <div
             key={index}
