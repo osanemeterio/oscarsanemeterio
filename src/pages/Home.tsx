@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { MessageSquare, Brain, FileText, Send, Linkedin, Twitter, Cpu, Building2, GraduationCap, PenTool, Users, Target, Mail, User, Phone, MapPin } from 'lucide-react'
+import { MessageSquare, Brain, FileText, Send, Linkedin, Twitter, Cpu, Building2, GraduationCap, PenTool, Users, Target, Mail, User, Phone, MapPin, BookOpen } from 'lucide-react'
 
 function App() {
   const [newsletterEmail, setNewsletterEmail] = useState('')
@@ -360,11 +360,29 @@ function App() {
               </p>
             </div>
             <div className="flex space-x-6">
-              <a href="#" className="text-[#39bdf5] hover:text-white transition-colors duration-300 p-2 rounded-lg hover:bg-white/10">
+              <a 
+                href="https://www.linkedin.com/in/osanemeterio/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[#39bdf5] hover:text-white transition-colors duration-300 p-2 rounded-lg hover:bg-white/10"
+              >
                 <Linkedin className="w-7 h-7" />
               </a>
-              <a href="#" className="text-[#39bdf5] hover:text-white transition-colors duration-300 p-2 rounded-lg hover:bg-white/10">
+              <a 
+                href="https://twitter.com/osanemeterio" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[#39bdf5] hover:text-white transition-colors duration-300 p-2 rounded-lg hover:bg-white/10"
+              >
                 <Twitter className="w-7 h-7" />
+              </a>
+              <a 
+                href="https://osanemeterio.substack.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[#39bdf5] hover:text-white transition-colors duration-300 p-2 rounded-lg hover:bg-white/10"
+              >
+                <BookOpen className="w-7 h-7" />
               </a>
             </div>
           </div>
