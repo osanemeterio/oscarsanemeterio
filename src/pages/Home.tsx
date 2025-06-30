@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { MessageSquare, Brain, FileText, Send, Linkedin, Twitter, Cpu, Building2, GraduationCap, PenTool, Users, Target, Mail, User, Phone, MapPin, Calendar } from 'lucide-react'
+import { MessageSquare, Brain, FileText, Send, Linkedin, Twitter, Cpu, Building2, GraduationCap, PenTool, Users, Target, Mail, User, Phone, MapPin } from 'lucide-react'
 
 function App() {
   const [newsletterEmail, setNewsletterEmail] = useState('')
@@ -212,17 +212,6 @@ function App() {
         )
       })}
     </div>
-    
-    {/* Botón ¿Hablamos? */}
-    <div className="text-center mt-16">
-      <a
-        href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3dPNmLgARl5QQtwFkO6oBuSsCHnBPkow5biWhKCdEBM7V-FYwHH3omucOgrgZqVDR5RubmXYuc"
-        className="slide-up btn-primary inline-flex items-center space-x-2 text-lg font-semibold"
-      >
-        <Calendar className="w-5 h-5" />
-        <span>¿Hablamos?</span>
-      </a>
-    </div>
   </div>
 </section>
       {/* Personal Introduction Section */}
@@ -359,7 +348,7 @@ function App() {
               <div className="inline-block p-3 rounded-xl backdrop-blur-sm bg-white/5 mb-4">
                 <img src="/logo.png" alt="Conexión Pública" className="h-12" />
               </div>
-              <p className="text-white/90 text-lg">
+              <p className="text-white/90 text-xl md:text-2xl font-medium">
                 Ayudo a potenciar organizaciones con propósito
               </p>
             </div>
