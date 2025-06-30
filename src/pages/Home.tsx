@@ -230,7 +230,7 @@ function App() {
                 Con más de 16 años de experiencia en comunicación institucional y un enfoque estratégico centrado en la innovación, ayudo a organizaciones a transformar su mensaje aplicando inteligencia artificial y narrativa profesional.
               </p>
             <p className="text-lg md:text-xl mb-8 text-white/90 leading-relaxed">
-              Fundador de <a href="https://www.conexionpublica.es" target="_blank" rel="noopener noreferrer" className="underline text-[#39bdf5] hover:text-white transition-colors">Conexión Pública</a>, consultor, formador y creador del pódcast del mismo nombre, especializado en comunicación con IA para pymes, ONG e instituciones.
+              Fundador de <a href="https://www.conexionpublica.es" target="_blank" rel="noopener noreferrer" className="underline text-[#39bdf5] hover:text-white transition-colors">Conexión Pública</a>, consultor, formador y creador del pódcast del mismo nombre. Estoy especializado en comunicación con IA para pymes, ONG e instituciones.
 </p>
             <a 
               href="https://www.linkedin.com/in/osanemeterio/" 
