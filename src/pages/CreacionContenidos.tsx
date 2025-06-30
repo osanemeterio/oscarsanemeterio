@@ -14,7 +14,7 @@ export default function CreacionContenidosPage() {
         <div className="bg-gray-50 p-8 rounded-2xl shadow-md text-left">
           <h2 className="text-2xl font-semibold mb-4">¿Qué incluye este servicio?</h2>
           <ul className="list-disc pl-6 text-gray-700 space-y-3">
-            <li>Redacción web optimizada para SEO y conversión</li>
+            <li>Redacción web optimizada para SEO adaptada a IA y conversión</li>
             <li>Creación de contenido para redes sociales y newsletters</li>
             <li>Desarrollo de estrategias de content marketing</li>
             <li>Producción de artículos especializados y casos de estudio</li>
