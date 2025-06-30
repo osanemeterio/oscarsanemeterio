@@ -15,6 +15,7 @@ export default function ComunicacionInstitucionalPage() {
           <h2 className="text-2xl font-semibold mb-4">¿Qué incluye este servicio?</h2>
           <ul className="list-disc pl-6 text-gray-700 space-y-3">
             <li>Auditoría de comunicación institucional y análisis de reputación</li>
+            <li>Estrategia institucional y mediática</li>
             <li>Estrategias de comunicación externa e interna</li>
             <li>Planes de crisis y gestión de comunicación en situaciones complejas</li>
             <li>Formación de portavoces y equipos directivos</li>
