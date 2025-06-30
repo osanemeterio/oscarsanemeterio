@@ -87,7 +87,7 @@ function App() {
       <section className="bg-[#5a5b7f] min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#5a5b7f] via-[#5a5b7f] to-[#4a4b6f] opacity-90"></div>
         <div className="max-w-5xl mx-auto text-center text-white relative z-10">
-          <div className="fade-in mb-8">
+          <div className="fade-in mb-12">
            <div className="text-center mb-6">
   <h2 className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
     Óscar San Emeterio
