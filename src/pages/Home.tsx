@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { MessageSquare, Brain, FileText, Send, Linkedin, Twitter, Cpu, Building2, GraduationCap, PenTool, Users, BarChart3, Mail, User } from 'lucide-react'
 
 function App() {
@@ -110,9 +111,6 @@ function App() {
     Consultor de comunicación e inteligencia artificial
   </p>
 </div>
-            <div className="inline-block p-4 rounded-2xl backdrop-blur-sm bg-white/5 mb-8">
-          
-            </div>
           </div>
           <h1 className="fade-in text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             Servicios estratégicos de<br />
@@ -136,7 +134,15 @@ function App() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             {coreServices.map((service, index) => (
-              <div key={index} className="slide-up service-card text-center">
+              <Link 
+                key={index} 
+                to={
+                  service.title === 'Consultoría en Comunicación' ? '/ConsultoriaEnComunicacion' :
+                  service.title === 'Capacitación en IA Aplicada' ? '/capacitacion-ia' :
+                  service.title === 'Producción de Contenidos' ? '/produccion-contenidos' : '/'
+                }
+                className="slide-up service-card text-center block no-underline hover:scale-105 transition-transform"
+              >
                 <div className="mb-4 flex justify-center">
                   {service.icon}
                 </div>
@@ -146,7 +152,7 @@ function App() {
                 <p className="text-gray-600 leading-relaxed">
                   {service.description}
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -163,47 +169,55 @@ function App() {
       </p>
     </div>
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-import { Link } from 'react-router-dom'
+      {extendedServices.map((service, index) => {
+        // Definir las rutas para cada servicio
+        const serviceRoutes: { [key: string]: string } = {
+          'Consultoría en IA': '/consultoria',
+          'Comunicación Institucional': '/comunicacion-institucional',
+          'Formación en IA': '/formacion-ia',
+          'Creación de Contenidos': '/creacion-contenidos',
+          'Talleres Prácticos': '/talleres-practicos',
+          'Análisis de Datos': '/analisis-datos'
+        }
 
-// ...
+        const route = serviceRoutes[service.title]
+        
+        if (route) {
+          return (
+            <Link
+              key={index}
+              to={route}
+              className="slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 transition-transform hover:scale-105 text-left no-underline"
+            >
+              <div className="mb-4">
+                {service.icon}
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-[#5a5b7f]">
+                {service.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {service.description}
+              </p>
+            </Link>
+          )
+        }
 
-{extendedServices.map((service, index) => {
-  if (service.title === 'Consultoría en IA') {
-    return (
-      <Link
-        key={index}
-        to="/consultoria"
-        className="slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 transition-transform hover:scale-105 text-left no-underline"
-      >
-        <div className="mb-4">
-          {service.icon}
-        </div>
-        <h3 className="text-xl font-bold mb-4 text-[#5a5b7f]">
-          {service.title}
-        </h3>
-        <p className="text-gray-600 leading-relaxed">
-          {service.description}
-        </p>
-      </Link>
-    )
-  }
-
-  // el resto de tarjetas sin enlace:
-  return (
-    <div
-      key={index}
-      className="slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 cursor-default text-left"
-    >
-      <div className="mb-4">{service.icon}</div>
-      <h3 className="text-xl font-bold mb-4 text-[#5a5b7f]">
-        {service.title}
-      </h3>
-      <p className="text-gray-600 leading-relaxed">
-        {service.description}
-      </p>
-    </div>
-  )
-})}
+        // Fallback para tarjetas sin ruta definida
+        return (
+          <div
+            key={index}
+            className="slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 cursor-default text-left"
+          >
+            <div className="mb-4">{service.icon}</div>
+            <h3 className="text-xl font-bold mb-4 text-[#5a5b7f]">
+              {service.title}
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              {service.description}
+            </p>
+          </div>
+        )
+      })}
     </div>
   </div>
 </section>
@@ -223,11 +237,17 @@ import { Link } from 'react-router-dom'
                 Con más de 16 años de experiencia en comunicación institucional y un enfoque estratégico centrado en la innovación, ayudo a organizaciones a transformar su mensaje aplicando inteligencia artificial y narrativa profesional.
               </p>
             <p className="text-lg md:text-xl mb-8 text-white/90 leading-relaxed">
-  Fundador de <a href="https://www.conexionpublica.es" target="_blank" rel="noopener noreferrer" className="underline text-[#39bdf5] hover:text-white transition-colors">Conexión Pública</a>, consultor, formador y creador del pódcast del mismo nombre, especializado en comunicación con IA para pymes, ONG e instituciones.
+              Fundador de <a href="https://www.conexionpublica.es" target="_blank" rel="noopener noreferrer" className="underline text-[#39bdf5] hover:text-white transition-colors">Conexión Pública</a>, consultor, formador y creador del pódcast del mismo nombre, especializado en comunicación con IA para pymes, ONG e instituciones.
 </p>
-            <div className="btn-primary inline-flex items-center space-x-2 text-lg cursor-default">
-  <span>Más sobre Óscar</span>
-</div>
+            <a 
+              href="https://www.linkedin.com/in/osanemeterio/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn-primary inline-flex items-center space-x-2 text-lg hover:bg-[#2da8e1] transition-colors cursor-pointer"
+            >
+              <Linkedin className="w-5 h-5" />
+              <span>Mi perfil de LinkedIn</span>
+            </a>
             </div>
           </div>
         </div>
