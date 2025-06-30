@@ -301,10 +301,10 @@ function App() {
                 <Phone className="w-12 h-12 text-[#39bdf5] mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-[#5a5b7f] mb-2">Teléfono</h3>
                 <a 
-                  href="tel:+34942123456"
+                  href="tel:+34676060487"
                   className="text-lg text-gray-600 hover:text-[#39bdf5] transition-colors"
                 >
-                  +34 942 123 456
+                  +34 676 060 487
                 </a>
               </div>
 
