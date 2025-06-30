@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { MessageSquare, Brain, FileText, Send, Linkedin, Twitter, Cpu, Building2, GraduationCap, PenTool, Users, BarChart3, Mail, User, Phone, MapPin } from 'lucide-react'
+import { MessageSquare, Brain, FileText, Send, Linkedin, Twitter, Cpu, Building2, GraduationCap, PenTool, Users, Mail, User, Phone, MapPin } from 'lucide-react'
 
 function App() {
   const [newsletterEmail, setNewsletterEmail] = useState('')
@@ -73,11 +73,6 @@ function App() {
       icon: <Users className="w-8 h-8 text-[#39bdf5]" />,
       title: "Talleres Prácticos",
       description: "Aplicación real de herramientas de IA en comunicación con casos prácticos y metodologías probadas."
-    },
-    {
-      icon: <BarChart3 className="w-8 h-8 text-[#39bdf5]" />,
-      title: "Análisis de Datos",
-      description: "Métricas avanzadas y optimización para estrategia digital con enfoque en resultados medibles."
     }
   ]
 
@@ -167,8 +162,7 @@ function App() {
           'Comunicación Institucional': '/comunicacion-institucional',
           'Formación en IA': '/formacion-ia',
           'Creación de Contenidos': '/creacion-contenidos',
-          'Talleres Prácticos': '/talleres-practicos',
-          'Análisis de Datos': '/analisis-datos'
+          'Talleres Prácticos': '/talleres-practicos'
         }
 
         const route = serviceRoutes[service.title]
