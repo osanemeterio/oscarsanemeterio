@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { MessageSquare, Brain, FileText, Send, Linkedin, Twitter, Cpu, Building2, GraduationCap, PenTool, Users, BarChart3, Mail, User } from 'lucide-react'
 
 function App() {
@@ -163,11 +164,7 @@ function App() {
       </p>
     </div>
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-import { Link } from 'react-router-dom'
-
-// ...
-
-{extendedServices.map((service, index) => {
+      {extendedServices.map((service, index) => {
   if (service.title === 'Consultoría en IA') {
     return (
       <Link
@@ -188,22 +185,22 @@ import { Link } from 'react-router-dom'
     )
   }
 
-  // el resto de tarjetas sin enlace:
-  return (
-    <div
-      key={index}
-      className="slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 cursor-default text-left"
-    >
-      <div className="mb-4">{service.icon}</div>
-      <h3 className="text-xl font-bold mb-4 text-[#5a5b7f]">
-        {service.title}
-      </h3>
-      <p className="text-gray-600 leading-relaxed">
-        {service.description}
-      </p>
-    </div>
-  )
-})}
+        // el resto de tarjetas sin enlace:
+        return (
+          <div
+            key={index}
+            className="slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 cursor-default text-left"
+          >
+            <div className="mb-4">{service.icon}</div>
+            <h3 className="text-xl font-bold mb-4 text-[#5a5b7f]">
+              {service.title}
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              {service.description}
+            </p>
+          </div>
+        )
+      })}
     </div>
   </div>
 </section>
