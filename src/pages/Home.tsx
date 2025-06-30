@@ -111,9 +111,6 @@ function App() {
     Consultor de comunicación e inteligencia artificial
   </p>
 </div>
-            <div className="inline-block p-4 rounded-2xl backdrop-blur-sm bg-white/5 mb-8">
-          
-            </div>
           </div>
           <h1 className="fade-in text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             Servicios estratégicos de<br />
