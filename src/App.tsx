@@ -8,7 +8,6 @@ import ComunicacionInstitucional from './pages/ComunicacionInstitucional'
 import FormacionIA from './pages/FormacionIA'
 import CreacionContenidos from './pages/CreacionContenidos'
 import TalleresPracticos from './pages/TalleresPracticos'
-import AnalisisDatos from './pages/AnalisisDatos'
 import MentoriaSeguimiento from './pages/MentoriaSeguimiento'
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
         <Route path="/formacion-ia" element={<FormacionIA />} />
         <Route path="/creacion-contenidos" element={<CreacionContenidos />} />
         <Route path="/talleres-practicos" element={<TalleresPracticos />} />
-        <Route path="/analisis-datos" element={<AnalisisDatos />} />
         <Route path="/mentoria-seguimiento" element={<MentoriaSeguimiento />} />
       </Routes>
     </Router>

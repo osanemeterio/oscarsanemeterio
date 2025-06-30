@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { MessageSquare, Brain, FileText, Send, Linkedin, Twitter, Cpu, Building2, GraduationCap, PenTool, Users, BarChart3, Mail, User, Phone, MapPin, Target } from 'lucide-react'
+import { MessageSquare, Brain, FileText, Send, Linkedin, Twitter, Cpu, Building2, GraduationCap, PenTool, Users, Target, Mail, User, Phone, MapPin } from 'lucide-react'
 
 function App() {
   const [newsletterEmail, setNewsletterEmail] = useState('')
@@ -75,14 +75,9 @@ function App() {
       description: "Aplicación real de herramientas de IA en comunicación con casos prácticos y metodologías probadas."
     },
     {
-      icon: <BarChart3 className="w-10 h-10 text-[#39bdf5]" />,
-      title: "Análisis de Datos",
-      description: "Métricas avanzadas y optimización para estrategia digital con enfoque en resultados medibles."
-    },
-    {
       icon: <Target className="w-10 h-10 text-[#39bdf5]" />,
       title: "Mentoría y Seguimiento Estratégico",
-      description: "Acompañamiento mensual para equipos que quieren integrar la IA y la comunicación con visión, continuidad y criterio experto."
+      description: "Acompañamiento mensual para equipos que quieren integrar la IA y la comunicación."
     }
   ]
 
@@ -173,7 +168,6 @@ function App() {
           'Formación en IA': '/formacion-ia',
           'Creación de Contenidos': '/creacion-contenidos',
           'Talleres Prácticos': '/talleres-practicos',
-          'Análisis de Datos': '/analisis-datos',
           'Mentoría y Seguimiento Estratégico': '/mentoria-seguimiento'
         }
 

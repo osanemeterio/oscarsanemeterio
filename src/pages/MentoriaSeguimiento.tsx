@@ -7,9 +7,8 @@ export default function MentoriaSeguimientoPage() {
         <Target className="w-16 h-16 text-[#39bdf5] mx-auto mb-6" />
         <h1 className="text-4xl md:text-5xl font-bold mb-6">Mentoría y Seguimiento Estratégico</h1>
         <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-          Acompañamiento mensual para equipos que quieren integrar la IA y la comunicación con visión, 
-          continuidad y criterio experto. Un servicio personalizado para organizaciones comprometidas con 
-          la excelencia y la mejora continua.
+          Acompañamiento mensual para equipos que quieren integrar la IA y la comunicación. 
+          Un servicio personalizado para organizaciones comprometidas con la excelencia y la mejora continua.
         </p>
 
         <div className="bg-gray-50 p-8 rounded-2xl shadow-md text-left">
