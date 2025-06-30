@@ -243,8 +243,15 @@ function App() {
   Fundador de <a href="https://www.conexionpublica.es" target="_blank" rel="noopener noreferrer" className="underline text-[#39bdf5] hover:text-white transition-colors">Conexión Pública</a>, consultor, formador y creador del pódcast del mismo nombre, especializado en comunicación con IA para pymes, ONG e instituciones.
 </p>
             <div className="btn-primary inline-flex items-center space-x-2 text-lg cursor-default">
-  <span>Más sobre Óscar</span>
-</div>
+            <a 
+              href="https://www.linkedin.com/in/osanemeterio/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn-primary inline-flex items-center space-x-2 text-lg hover:bg-[#2da8e1] transition-colors cursor-pointer"
+            >
+              <Linkedin className="w-5 h-5" />
+              <span>Mi perfil de LinkedIn</span>
+            </a>
             </div>
           </div>
         </div>
