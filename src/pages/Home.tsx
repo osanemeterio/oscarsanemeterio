@@ -118,6 +118,11 @@ function App() {
       {/* Core Services Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="fade-in text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f]">
+              Mis áreas de trabajo
+            </h2>
+          </div>
           <div className="grid md:grid-cols-3 gap-8">
             {coreServices.map((service, index) => (
               <Link 
