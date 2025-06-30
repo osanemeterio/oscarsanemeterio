@@ -212,6 +212,16 @@ function App() {
         )
       })}
     </div>
+    
+    {/* Botón ¿Hablamos? */}
+    <div className="text-center mt-16">
+      <a
+        href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3dPNmLgARl5QQtwFkO6oBuSsCHnBPkow5biWhKCdEBM7V-FYwHH3omucOgrgZqVDR5RubmXYuc"
+        className="btn-primary text-lg font-semibold inline-block"
+      >
+        ¿Hablamos?
+      </a>
+    </div>
   </div>
 </section>
       {/* Personal Introduction Section */}
@@ -345,9 +355,6 @@ function App() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             <div className="mb-8 md:mb-0 text-center md:text-left">
-              <div className="inline-block p-3 rounded-xl backdrop-blur-sm bg-white/5 mb-4">
-                <img src="/logo.png" alt="Conexión Pública" className="h-12" />
-              </div>
               <p className="text-white/90 text-xl md:text-2xl font-medium">
                 Ayudo a potenciar organizaciones con propósito
               </p>
