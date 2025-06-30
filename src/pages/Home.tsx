@@ -242,6 +242,7 @@ function App() {
             <p className="text-lg md:text-xl mb-8 text-white/90 leading-relaxed">
   Fundador de <a href="https://www.conexionpublica.es" target="_blank" rel="noopener noreferrer" className="underline text-[#39bdf5] hover:text-white transition-colors">Conexión Pública</a>, consultor, formador y creador del pódcast del mismo nombre, especializado en comunicación con IA para pymes, ONG e instituciones.
 </p>
+            <div className="btn-primary inline-flex items-center space-x-2 text-lg cursor-default">
             <a 
               href="https://www.linkedin.com/in/osanemeterio/" 
               target="_blank" 
@@ -251,7 +252,9 @@ function App() {
               <Linkedin className="w-5 h-5" />
               <span>Mi perfil de LinkedIn</span>
             </a>
+            </div>
           </div>
+        </div>
         </div>
       </section>
 
