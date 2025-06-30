@@ -167,12 +167,19 @@ function App() {
 
         const route = serviceRoutes[service.title]
         
+        // Add special styling for the last two cards to center them
+        const isLastTwoCards = index >= 3
+        const cardClasses = `slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 transition-transform hover:scale-105 text-left no-underline ${
+          isLastTwoCards ? 'lg:col-start-2 lg:col-span-1' : ''
+        }`
+        
         if (route) {
           return (
             <Link
               key={index}
               to={route}
-              className="slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 transition-transform hover:scale-105 text-left no-underline"
+              className={cardClasses}
+              style={index === 3 ? { gridColumnStart: 2 } : {}}
             >
               <div className="mb-4">
                 {service.icon}
@@ -191,7 +198,10 @@ function App() {
         return (
           <div
             key={index}
-            className="slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 cursor-default text-left"
+            className={`slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 cursor-default text-left ${
+              isLastTwoCards ? 'lg:col-start-2 lg:col-span-1' : ''
+            }`}
+            style={index === 3 ? { gridColumnStart: 2 } : {}}
           >
             <div className="mb-4">{service.icon}</div>
             <h3 className="text-xl font-bold mb-4 text-[#5a5b7f]">
