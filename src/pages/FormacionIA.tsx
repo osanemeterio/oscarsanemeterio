@@ -15,6 +15,7 @@ export default function FormacionIAPage() {
           <h2 className="text-2xl font-semibold mb-4">¿Qué incluye este servicio?</h2>
           <ul className="list-disc pl-6 text-gray-700 space-y-3">
             <li>Cursos introductorios sobre IA para equipos no técnicos</li>
+            <li>Cursos a la carta</li>
             <li>Talleres prácticos de herramientas de IA aplicada a comunicación</li>
             <li>Formación en prompt engineering y optimización de resultados</li>
             <li>Capacitación en automatización de procesos con IA</li>
