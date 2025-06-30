@@ -154,7 +154,7 @@ function App() {
         Soluciones profesionales en comunicación e IA para impulsar tu organización en Cantabria
       </p>
     </div>
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {extendedServices.map((service, index) => {
         // Definir las rutas para cada servicio
         const serviceRoutes: { [key: string]: string } = {
@@ -167,19 +167,22 @@ function App() {
 
         const route = serviceRoutes[service.title]
         
-        // Add special styling for the last two cards to center them
-        const isLastTwoCards = index >= 3
-        const cardClasses = `slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 transition-transform hover:scale-105 text-left no-underline ${
-          isLastTwoCards ? 'lg:col-start-2 lg:col-span-1' : ''
-        }`
+        // Aplicar clases especiales para centrar las dos últimas tarjetas
+        let gridClasses = ''
+        if (index === 3) {
+          // Primera tarjeta de la segunda fila - centrada
+          gridClasses = 'lg:col-start-2 lg:col-end-3'
+        } else if (index === 4) {
+          // Segunda tarjeta de la segunda fila - centrada
+          gridClasses = 'lg:col-start-3 lg:col-end-4'
+        }
         
         if (route) {
           return (
             <Link
               key={index}
               to={route}
-              className={cardClasses}
-              style={index === 3 ? { gridColumnStart: 2 } : {}}
+              className={`slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 transition-transform hover:scale-105 text-left no-underline ${gridClasses}`}
             >
               <div className="mb-4">
                 {service.icon}
@@ -198,10 +201,7 @@ function App() {
         return (
           <div
             key={index}
-            className={`slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 cursor-default text-left ${
-              isLastTwoCards ? 'lg:col-start-2 lg:col-span-1' : ''
-            }`}
-            style={index === 3 ? { gridColumnStart: 2 } : {}}
+            className={`slide-up extended-service-card block rounded-xl bg-white shadow-md p-6 cursor-default text-left ${gridClasses}`}
           >
             <div className="mb-4">{service.icon}</div>
             <h3 className="text-xl font-bold mb-4 text-[#5a5b7f]">
