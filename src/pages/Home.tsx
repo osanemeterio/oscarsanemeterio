@@ -1,14 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { MessageSquare, Brain, FileText, Send, Linkedin, Twitter, Cpu, Building2, GraduationCap, PenTool, Users, BarChart3, Mail, User } from 'lucide-react'
+import { MessageSquare, Brain, FileText, Send, Linkedin, Twitter, Cpu, Building2, GraduationCap, PenTool, Users, BarChart3, Mail, User, Phone, MapPin } from 'lucide-react'
 
 function App() {
-  const [formData, setFormData] = useState({
-    nombre: '',
-    email: '',
-    mensaje: ''
-  })
-
   const [newsletterEmail, setNewsletterEmail] = useState('')
 
   useEffect(() => {
@@ -30,14 +24,6 @@ function App() {
 
     return () => observer.disconnect()
   }, [])
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    const subject = encodeURIComponent('Consulta desde Conexión Pública')
-    const body = encodeURIComponent(`Nombre: ${formData.nombre}\nEmail: ${formData.email}\n\nMensaje:\n${formData.mensaje}`)
-    window.location.href = `mailto:osanemeterio@conexionpublica.es?subject=${subject}&body=${body}`
-    setFormData({ nombre: '', email: '', mensaje: '' })
-  }
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -289,60 +275,60 @@ function App() {
         </div>
       </section>
 
-      {/* Contact Form Section */}
+      {/* Contact Section */}
       <section className="py-20 px-4 bg-white">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="fade-in text-4xl md:text-5xl font-bold text-center mb-16 text-[#5a5b7f]">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="fade-in text-4xl md:text-5xl font-bold mb-16 text-[#5a5b7f]">
             Contáctame
           </h2>
-          <form onSubmit={handleSubmit} className="slide-up bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100">
-            <div className="mb-6">
-              <label htmlFor="nombre" className="block text-[#5a5b7f] font-semibold mb-2">
-                Nombre
-              </label>
-              <input
-                type="text"
-                id="nombre"
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#39bdf5] focus:border-transparent transition-all duration-300 bg-white"
-                value={formData.nombre}
-                onChange={(e) => setFormData({...formData, nombre: e.target.value})}
-              />
+          
+          <div className="slide-up bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100">
+            <div className="space-y-8">
+              {/* Email Contact */}
+              <div className="text-center">
+                <Mail className="w-12 h-12 text-[#39bdf5] mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-[#5a5b7f] mb-2">Email</h3>
+                <a 
+                  href="mailto:osanemeterio@conexionpublica.es"
+                  className="text-lg text-gray-600 hover:text-[#39bdf5] transition-colors"
+                >
+                  osanemeterio@conexionpublica.es
+                </a>
+              </div>
+
+              {/* Phone Contact */}
+              <div className="text-center">
+                <Phone className="w-12 h-12 text-[#39bdf5] mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-[#5a5b7f] mb-2">Teléfono</h3>
+                <a 
+                  href="tel:+34942123456"
+                  className="text-lg text-gray-600 hover:text-[#39bdf5] transition-colors"
+                >
+                  +34 942 123 456
+                </a>
+              </div>
+
+              {/* Location */}
+              <div className="text-center">
+                <MapPin className="w-12 h-12 text-[#39bdf5] mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-[#5a5b7f] mb-2">Ubicación</h3>
+                <p className="text-lg text-gray-600">
+                  Cantabria, España
+                </p>
+              </div>
+
+              {/* CTA Button */}
+              <div className="pt-6">
+                <a
+                  href="mailto:osanemeterio@conexionpublica.es?subject=Consulta%20desde%20web&body=Hola%20Óscar,%0A%0AMe%20gustaría%20contactar%20contigo%20para%20hablar%20sobre..."
+                  className="btn-primary inline-flex items-center space-x-2 text-lg w-full justify-center"
+                >
+                  <Send className="w-5 h-5" />
+                  <span>Enviar email</span>
+                </a>
+              </div>
             </div>
-            <div className="mb-6">
-              <label htmlFor="email" className="block text-[#5a5b7f] font-semibold mb-2">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#39bdf5] focus:border-transparent transition-all duration-300 bg-white"
-                value={formData.email}
-                onChange={(e) => setFormData({...formData, email: e.target.value})}
-              />
-            </div>
-            <div className="mb-8">
-              <label htmlFor="mensaje" className="block text-[#5a5b7f] font-semibold mb-2">
-                Mensaje
-              </label>
-              <textarea
-                id="mensaje"
-                rows={5}
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#39bdf5] focus:border-transparent transition-all duration-300 resize-none bg-white"
-                value={formData.mensaje}
-                onChange={(e) => setFormData({...formData, mensaje: e.target.value})}
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full btn-primary flex items-center justify-center space-x-2 text-lg"
-            >
-              <Send className="w-5 h-5" />
-              <span>Enviar mensaje</span>
-            </button>
-          </form>
+          </div>
         </div>
       </section>
 
