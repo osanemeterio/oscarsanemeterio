@@ -137,7 +137,15 @@ function App() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             {coreServices.map((service, index) => (
-              <div key={index} className="slide-up service-card text-center">
+              <Link 
+                key={index} 
+                to={
+                  service.title === 'Consultoría en Comunicación' ? '/ConsultoriaEnComunicacion' :
+                  service.title === 'Capacitación en IA Aplicada' ? '/capacitacion-ia' :
+                  service.title === 'Producción de Contenidos' ? '/produccion-contenidos' : '/'
+                }
+                className="slide-up service-card text-center block no-underline hover:scale-105 transition-transform"
+              >
                 <div className="mb-4 flex justify-center">
                   {service.icon}
                 </div>
@@ -147,7 +155,7 @@ function App() {
                 <p className="text-gray-600 leading-relaxed">
                   {service.description}
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
