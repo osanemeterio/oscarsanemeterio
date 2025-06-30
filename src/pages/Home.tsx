@@ -50,27 +50,27 @@ function App() {
 
   const extendedServices = [
     {
-      icon: <Cpu className="w-12 h-12 text-[#39bdf5]" />,
+      icon: <Cpu className="w-10 h-10 text-[#39bdf5]" />,
       title: "Consultoría en IA",
       description: "Implementación estratégica de IA para comunicación efectiva y optimización de procesos organizacionales."
     },
     {
-      icon: <Building2 className="w-12 h-12 text-[#39bdf5]" />,
+      icon: <Building2 className="w-10 h-10 text-[#39bdf5]" />,
       title: "Comunicación Institucional",
       description: "Estrategias de comunicación especializadas para instituciones públicas y privadas en Cantabria."
     },
     {
-      icon: <GraduationCap className="w-12 h-12 text-[#39bdf5]" />,
+      icon: <GraduationCap className="w-10 h-10 text-[#39bdf5]" />,
       title: "Formación en IA",
       description: "Cursos especializados para equipos sobre el uso práctico de IA en tareas diarias y comunicación."
     },
     {
-      icon: <PenTool className="w-12 h-12 text-[#39bdf5]" />,
+      icon: <PenTool className="w-10 h-10 text-[#39bdf5]" />,
       title: "Creación de Contenidos",
       description: "Redacción profesional orientada a SEO para canales digitales y posicionamiento web."
     },
     {
-      icon: <Users className="w-12 h-12 text-[#39bdf5]" />,
+      icon: <Users className="w-10 h-10 text-[#39bdf5]" />,
       title: "Talleres Prácticos",
       description: "Aplicación real de herramientas de IA en comunicación con casos prácticos y metodologías probadas."
     }
@@ -154,7 +154,7 @@ function App() {
         Soluciones profesionales en comunicación e IA para impulsar tu organización en Cantabria
       </p>
     </div>
-    <div className="space-y-6">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       {extendedServices.map((service, index) => {
         // Definir las rutas para cada servicio
         const serviceRoutes: { [key: string]: string } = {
@@ -172,21 +172,17 @@ function App() {
             <Link
               key={index}
               to={route}
-              className="slide-up block bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#39bdf5]/30 transform hover:-translate-y-1 no-underline"
+              className="slide-up service-card text-center block no-underline hover:scale-105 transition-transform"
             >
-              <div className="flex items-center space-x-6">
-                <div className="flex-shrink-0">
-                  {service.icon}
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2 text-[#5a5b7f]">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
+              <div className="mb-4 flex justify-center">
+                {service.icon}
               </div>
+              <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
+                {service.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {service.description}
+              </p>
             </Link>
           )
         }
@@ -195,21 +191,17 @@ function App() {
         return (
           <div
             key={index}
-            className="slide-up bg-white p-6 rounded-xl shadow-lg border border-gray-100 cursor-default"
+            className="slide-up service-card text-center cursor-default"
           >
-            <div className="flex items-center space-x-6">
-              <div className="flex-shrink-0">
-                {service.icon}
-              </div>
-              <div className="flex-1">
-                <h3 className="text-xl font-bold mb-2 text-[#5a5b7f]">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
+            <div className="mb-4 flex justify-center">
+              {service.icon}
             </div>
+            <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
+              {service.title}
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              {service.description}
+            </p>
           </div>
         )
       })}
