@@ -19,7 +19,7 @@ export default function ProduccionContenidosPage() {
             <li>Creación de cursos online y material educativo</li>
             <li>Redacción web y contenido para blogs</li>
             <li>Contenido para redes sociales y newsletters</li>
-            <li>Optimización SEO y posicionamiento</li>
+            <li>Optimización SEO para IA y posicionamiento</li>
             <li>Calendario editorial y planificación de contenidos</li>
           </ul>
         </div>
