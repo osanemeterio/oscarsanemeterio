@@ -387,7 +387,7 @@ function App() {
             </div>
           </div>
           <div className="border-t border-white/20 pt-8 text-center text-white/70">
-            © 2024 Conexión Pública. Todos los derechos reservados.
+            © 2025 Conexión Pública. Todos los derechos reservados.
           </div>
         </div>
       </footer>
