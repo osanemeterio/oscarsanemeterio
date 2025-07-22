@@ -246,10 +246,9 @@ function App() {
               href="https://www.linkedin.com/in/osanemeterio/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex flex-col justify-center items-center text-center outline-none no-underline text-white w-[200px] h-8 rounded-2xl bg-[#0A66C2] hover:bg-[#004182] transition-colors cursor-pointer px-2 py-1.5 text-sm font-medium"
-              style={{ fontFamily: '"SF Pro Text", Helvetica, sans-serif' }}
+              className="btn-primary inline-block"
             >
-              <span>Sígueme en LinkedIn</span>
+              Sígueme en LinkedIn
             </a>
             </div>
           </div>
