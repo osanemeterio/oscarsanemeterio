@@ -246,10 +246,10 @@ function App() {
               href="https://www.linkedin.com/in/osanemeterio/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="btn-primary inline-flex items-center space-x-2 text-lg hover:bg-[#2da8e1] transition-colors cursor-pointer"
+              className="inline-flex flex-col justify-center items-center text-center outline-none no-underline text-white w-[200px] h-8 rounded-2xl bg-[#0A66C2] hover:bg-[#004182] transition-colors cursor-pointer px-2 py-1.5 text-sm font-medium"
+              style={{ fontFamily: '"SF Pro Text", Helvetica, sans-serif' }}
             >
-              <Linkedin className="w-5 h-5" />
-              <span>Mi perfil de LinkedIn</span>
+              <span>Sígueme en LinkedIn</span>
             </a>
             </div>
           </div>
