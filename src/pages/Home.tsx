@@ -255,6 +255,30 @@ function App() {
         </div>
       </section>
 
+      {/* Mis reflexiones Section */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="fade-in mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f]">
+              Mis reflexiones
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-8">
+              Pensamientos y análisis sobre comunicación, inteligencia artificial y el futuro de las organizaciones
+            </p>
+          </div>
+          <div className="slide-up">
+            <a
+              href="https://osanemeterio.substack.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary inline-block"
+            >
+              Lee mis reflexiones
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Newsletter Section */}
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
