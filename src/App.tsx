@@ -9,6 +9,7 @@ import FormacionIA from './pages/FormacionIA'
 import CreacionContenidos from './pages/CreacionContenidos'
 import TalleresPracticos from './pages/TalleresPracticos'
 import MentoriaSeguimiento from './pages/MentoriaSeguimiento'
+import PuntoYAparte from './pages/PuntoYAparte'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/creacion-contenidos" element={<CreacionContenidos />} />
         <Route path="/talleres-practicos" element={<TalleresPracticos />} />
         <Route path="/mentoria-seguimiento" element={<MentoriaSeguimiento />} />
+        <Route path="/blog/punto-y-aparte" element={<PuntoYAparte />} />
       </Routes>
     </Router>
   )

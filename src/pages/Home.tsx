@@ -262,85 +262,30 @@ function App() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f] text-center">
               Mis reflexiones
             </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed text-center">
+              Reflexiones sobre comunicación, inteligencia artificial y el futuro del trabajo
+            </p>
           </div>
           
-          {/* Título del artículo */}
+          {/* Entrada destacada */}
           <div className="slide-up mb-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-[#5a5b7f] mb-6 text-center">
-              Punto y aparte: comienzan los servicios de consultoría
-            </h3>
-          </div>
-          
-          {/* Resumen introductorio */}
-          <div className="slide-up mb-12">
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Después de meses de formación y experiencia en proyectos reales, Óscar San Emeterio da un paso adelante como consultor en comunicación estratégica e inteligencia artificial. En este artículo reflexiona sobre su experiencia en el Coworking Santander 2025, los aprendizajes clave y cómo se inicia su nueva etapa profesional.
+              <h3 className="text-2xl font-bold text-[#5a5b7f] mb-4">
+                Nueva entrada: Punto y aparte
               </p>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Después de meses de formación y experiencia en proyectos reales, doy un paso adelante como consultor en comunicación estratégica e inteligencia artificial.
+              </p>
+              <a
+                href="/blog/punto-y-aparte"
+                className="btn-primary inline-block"
+              >
+                Leer artículo completo
+              </a>
             </div>
           </div>
           
-          {/* Cuerpo del contenido */}
-          <div className="slide-up mb-12">
-            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-              <h4 className="text-xl font-bold text-[#5a5b7f] mb-6">Punto y aparte</h4>
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Tras meses de valiosas enseñanzas <a href="https://www.oscarsanemeterio.es" className="text-[#39bdf5] hover:underline" target="_blank" rel="noopener noreferrer">www.oscarsanemeterio.es</a> da sus primeros pasos.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                En este vídeo te cuento cómo ha sido el proceso y qué ofrezco a partir de ahora como consultor de comunicación estratégica con inteligencia artificial.
-              </p>
-              
-              {/* Video de YouTube */}
-              <div className="mb-8">
-                <h5 className="text-lg font-semibold text-[#5a5b7f] mb-4">🎥 Mira el vídeo completo aquí:</h5>
-                <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                  <iframe 
-                    className="absolute top-0 left-0 w-full h-full rounded-lg"
-                    src="https://www.youtube.com/embed/_xEp1KgurtE?si=LzXK4t4Q1NutZTc8" 
-                    title="YouTube video player" 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerPolicy="strict-origin-when-cross-origin" 
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
-              
-              {/* Enlaces adicionales */}
-              <div className="space-y-4">
-                <div>
-                  <p className="text-lg text-gray-700 mb-2">📖 Si prefieres leer el post completo, lo tienes publicado en Substack:</p>
-                  <a 
-                    href="https://oscarsanemeterio.substack.com/p/punto-y-aparte" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-[#39bdf5] hover:underline font-medium"
-                  >
-                    👉 https://oscarsanemeterio.substack.com/p/punto-y-aparte
-                  </a>
-                </div>
-                
-                <hr className="my-6 border-gray-200" />
-                
-                <div>
-                  <p className="text-lg text-gray-700">
-                    📝 También puedes ver más artículos y publicaciones recientes en la sección{' '}
-                    <a 
-                      href="https://oscarsanemeterio.es/blog" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-[#39bdf5] hover:underline font-medium"
-                    >
-                      Blog
-                    </a>.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          {/* Botón para ver más reflexiones */}
+          {/* Botón para ver todas las reflexiones */}
           <div className="slide-up text-center">
             <a
               href="https://osanemeterio.substack.com/"
