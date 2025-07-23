@@ -134,5 +134,3 @@ export default function BlogPage() {
         </div>
       </main>
     </div>
-  )
-}
