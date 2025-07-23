@@ -118,12 +118,6 @@ export default function BlogPage() {
                   </a>
                 </div>
               </div>
-              
-                  <BookOpen className="w-5 h-5" />
-                  <span>Ver todos los artículos en Substack</span>
-                </a>
-              </div>
-            </div>
           </div>
 
           {/* Navegación al final */}
