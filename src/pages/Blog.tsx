@@ -118,6 +118,7 @@ export default function BlogPage() {
                   </a>
                 </div>
               </div>
+            </div>
           </div>
 
           {/* Navegación al final */}
@@ -131,10 +132,7 @@ export default function BlogPage() {
             </a>
           </div>
         </div>
-        </div>
       </main>
     </div>
-  )
-}
   )
 }
