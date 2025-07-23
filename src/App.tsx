@@ -11,7 +11,6 @@ import TalleresPracticos from './pages/TalleresPracticos'
 import MentoriaSeguimiento from './pages/MentoriaSeguimiento'
 import PuntoYAparte from './pages/PuntoYAparte'
 import Blog from './pages/Blog'
-import Blog from './pages/Blog'
 
 function App() {
   return (
