@@ -31,7 +31,7 @@ export default function PuntoYApartePage() {
             <div className="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100">
               <h2 className="text-2xl font-bold text-[#5a5b7f] mb-4">Resumen</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Después de meses de formación y experiencia en proyectos reales, doy un paso adelante como consultor en comunicación estratégica e inteligencia artificial. En este artículo reflexiono sobre mi experiencia en el Coworking Santander 2025, los aprendizajes clave y cómo inicio mi nueva etapa profesional.
+                Ya ejercía como consultor antes de ponerle nombre. La experiencia me había dado el fondo necesario, pero gracias al Coworking Santander 2025 he podido asentar la estructura del negocio. En este artículo reflexiono sobre mi experiencia en el programa, los aprendizajes clave y cómo enfoco mi propuesta de comunicación estratégica con IA.
               </p>
             </div>
           </div>

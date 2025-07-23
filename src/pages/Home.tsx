@@ -274,7 +274,7 @@ function App() {
                 Nueva entrada: Punto y aparte
               </h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Después de meses de formación y experiencia en proyectos reales, doy un paso adelante como consultor en comunicación estratégica e inteligencia artificial.
+                Ya ejercía como consultor antes de ponerle nombre. Gracias al Coworking Santander 2025 he podido asentar la estructura del negocio y enfocar cómo ofrecer comunicación estratégica con IA como aliada clave.
               </p>
               <a
                 href="/blog/punto-y-aparte"
