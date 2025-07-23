@@ -349,7 +349,7 @@ function App() {
               className="btn-primary inline-block"
             >
               Ver todas mis reflexiones
-            </p>
+            </a>
           </div>
         </div>
       </section>
