@@ -11,6 +11,7 @@ import TalleresPracticos from './pages/TalleresPracticos'
 import MentoriaSeguimiento from './pages/MentoriaSeguimiento'
 import PuntoYAparte from './pages/PuntoYAparte'
 import Blog from './pages/Blog'
+import Blog from './pages/Blog'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/talleres-practicos" element={<TalleresPracticos />} />
         <Route path="/mentoria-seguimiento" element={<MentoriaSeguimiento />} />
         <Route path="/blog/punto-y-aparte" element={<PuntoYAparte />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/blog" element={<Blog />} />
       </Routes>
     </Router>
