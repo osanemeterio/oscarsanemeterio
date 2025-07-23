@@ -272,7 +272,7 @@ function App() {
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
               <h3 className="text-2xl font-bold text-[#5a5b7f] mb-4">
                 Nueva entrada: Punto y aparte
-              </p>
+              </h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Después de meses de formación y experiencia en proyectos reales, doy un paso adelante como consultor en comunicación estratégica e inteligencia artificial.
               </p>
