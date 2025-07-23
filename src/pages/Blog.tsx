@@ -131,6 +131,7 @@ export default function BlogPage() {
             </a>
           </div>
         </div>
+        </div>
       </main>
     </div>
   )
