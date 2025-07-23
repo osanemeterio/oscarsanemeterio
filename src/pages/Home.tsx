@@ -288,9 +288,7 @@ function App() {
           {/* Botón para ver todas las reflexiones */}
           <div className="slide-up text-center">
             <a
-              href="https://osanemeterio.substack.com/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/blog"
               className="btn-primary inline-block"
             >
               Ver todas mis reflexiones
