@@ -11,6 +11,7 @@ import TalleresPracticos from './pages/TalleresPracticos'
 import MentoriaSeguimiento from './pages/MentoriaSeguimiento'
 import PuntoYAparte from './pages/PuntoYAparte'
 import Blog from './pages/Blog'
+import ComunicacionInstitucionalIA from './pages/ComunicacionInstitucionalIA'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/blog/punto-y-aparte" element={<PuntoYAparte />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/comunicacion-institucional-ia" element={<ComunicacionInstitucionalIA />} />
       </Routes>
     </Router>
   )
