@@ -271,13 +271,13 @@ function App() {
           <div className="slide-up mb-8">
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
               <h3 className="text-2xl font-bold text-[#5a5b7f] mb-4">
-                Nueva entrada: Punto y aparte
+                Nueva entrada: Comunicación institucional en la era de la IA
               </h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Ya ejercía como consultor antes de ponerle nombre. Gracias al Coworking Santander 2025 he podido asentar la estructura del negocio y enfocar cómo ofrecer comunicación estratégica con IA como aliada clave.
+                La inteligencia artificial está transformando la comunicación institucional. Las organizaciones públicas y privadas deben adaptarse a esta nueva realidad para mantener la confianza ciudadana y la eficacia comunicativa.
               </p>
               <a
-                href="/blog/punto-y-aparte"
+                href="/blog/comunicacion-institucional-ia"
                 className="btn-primary inline-block"
               >
                 Leer artículo completo
