@@ -47,7 +47,7 @@ export default function BlogPage() {
                     🔹 Artículos editoriales diarios sobre IA
                   </h3>
                   <p className="text-gray-700">
-                    Están disponibles en mi proyecto divulgativo <strong>Conexión Pública</strong>,
+                    Están disponibles en mi proyecto divulgativo <a href="https://conexionpublica.es" target="_blank" rel="noopener noreferrer" className="underline text-[#39bdf5] hover:text-[#5a5b7f] transition-colors"><strong>Conexión Pública</strong></a>,
                     donde analizo a diario el impacto de la inteligencia artificial en la sociedad,
                     la tecnología y la comunicación.
                   </p>
@@ -60,7 +60,7 @@ export default function BlogPage() {
                   </h3>
                   <p className="text-gray-700">
                     He centralizado mi contenido personal —incluyendo reflexiones, recursos y
-                    episodios del podcast "Conexión Pública"— en Substack.
+                    episodios del podcast "Conexión Pública"— en <a href="https://osanemeterio.substack.com/" target="_blank" rel="noopener noreferrer" className="underline text-[#39bdf5] hover:text-[#5a5b7f] transition-colors">Substack</a>.
                   </p>
                 </div>
 
