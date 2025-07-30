@@ -74,7 +74,7 @@ export default function BlogPage() {
                       Visita el archivo completo en:
                     </p>
                     <a
-                      href="https://www.conexionpublica.es"
+                      href="https://conexionpublica.es/actualidad-2/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn-primary inline-flex items-center space-x-2 text-lg"
