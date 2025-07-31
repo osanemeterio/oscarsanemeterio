@@ -266,41 +266,25 @@ function App() {
               Reflexiones sobre comunicación, inteligencia artificial y el futuro del trabajo
             </p>
           </div>
-          
-          {/* Entrada destacada */}
-          <div className="slide-up mb-8">
-            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+          <div className="slide-up mb-12">
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 max-w-2xl mx-auto text-center">
               <h3 className="text-2xl font-bold text-[#5a5b7f] mb-4">
-                Nueva entrada: Comunicación institucional en la era de la IA
+                Mi Oferta Formativa en IA
               </h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                La inteligencia artificial está transformando la comunicación institucional. Las organizaciones públicas y privadas deben adaptarse a esta nueva realidad para mantener la confianza ciudadana y la eficacia comunicativa.
+                Descarga mi catálogo completo de cursos especializados en inteligencia artificial aplicada a la comunicación y la gestión organizacional.
               </p>
               <a
-                href="/blog/comunicacion-institucional-ia"
-                className="btn-primary inline-block"
+                href="/Mi-oferta-formativa-en-IA.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary inline-flex items-center space-x-2 text-lg"
               >
-                Leer artículo completo
+                <GraduationCap className="w-5 h-5" />
+                <span>Descargar Oferta Formativa</span>
               </a>
             </div>
           </div>
-          
-          {/* Botón para ver todas las reflexiones */}
-          <div className="slide-up text-center">
-            <a
-              href="/blog"
-              className="btn-primary inline-block"
-            >
-              Ver todas mis reflexiones
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Newsletter Section */}
-      <section className="py-20 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="fade-in mb-8">
             <Mail className="w-16 h-16 text-[#39bdf5] mx-auto mb-6" />
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f]">
               Mantente Informado
