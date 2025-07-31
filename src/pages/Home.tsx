@@ -327,21 +327,51 @@ function App() {
             </p>
           </div>
           
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Entrada destacada del blog */}
+            <Link
+              to="/blog/punto-y-aparte"
+              className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
+            >
+              <h3 className="text-xl font-bold text-white mb-3">
+                Punto y aparte: comienzan los servicios de consultoría
+              </h3>
+              <p className="text-white/90 mb-4 leading-relaxed">
+                Reflexiono sobre mi experiencia en el Coworking Santander 2025 y cómo enfoco mi propuesta de comunicación estratégica con IA.
+              </p>
+              <span className="text-[#39bdf5] font-medium">Leer más →</span>
+            </Link>
+
+            {/* Entrada sobre comunicación institucional e IA */}
+            <Link
+              to="/blog/comunicacion-institucional-ia"
+              className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
+            >
+              <h3 className="text-xl font-bold text-white mb-3">
+                Comunicación institucional en la era de la IA
+              </h3>
+              <p className="text-white/90 mb-4 leading-relaxed">
+                Cómo la inteligencia artificial está transformando la comunicación institucional y los nuevos desafíos que enfrentan las organizaciones.
+              </p>
+              <span className="text-[#39bdf5] font-medium">Leer más →</span>
+            </Link>
+          </div>
+          
           <div className="slide-up bg-white/10 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-white mb-4">
-              Accede a mis contenidos
+              Accede a todos mis contenidos
             </h3>
             <p className="text-white/90 mb-6 leading-relaxed">
               Encuentra mis artículos, reflexiones y el podcast en mis diferentes plataformas
             </p>
             <div className="space-y-4">
-              <a
-                href="/blog"
+              <Link
+                to="/blog"
                 className="btn-primary inline-flex items-center space-x-2 text-lg w-full justify-center"
               >
                 <BookOpen className="w-5 h-5" />
                 <span>Ver Blog</span>
-              </a>
+              </Link>
               <a
                 href="https://osanemeterio.substack.com/"
                 target="_blank"
