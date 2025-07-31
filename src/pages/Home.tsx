@@ -255,19 +255,23 @@ function App() {
         </div>
       </section>
 
-      {/* Mis reflexiones Section */}
-      <section className="py-20 px-4 bg-gray-50">
+      {/* Oferta Formativa Section */}
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          <div className="fade-in mb-8">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f] text-center">
-              Mis reflexiones
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed text-center">
-              Reflexiones sobre comunicación, inteligencia artificial y el futuro del trabajo
-            </p>
+          <div className="text-center mb-12">
+            <div className="fade-in mb-8">
+              <GraduationCap className="w-16 h-16 text-[#39bdf5] mx-auto mb-6" />
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f]">
+                Oferta Formativa
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Descarga mi catálogo completo de cursos especializados en inteligencia artificial
+              </p>
+            </div>
           </div>
+          
           <div className="slide-up mb-12">
-            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 max-w-2xl mx-auto text-center">
+            <div className="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 max-w-2xl mx-auto text-center">
               <h3 className="text-2xl font-bold text-[#5a5b7f] mb-4">
                 Mi Oferta Formativa en IA
               </h3>
@@ -285,6 +289,36 @@ function App() {
               </a>
             </div>
           </div>
+          
+          <div className="slide-up text-center">
+            <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-[#39bdf5] max-w-2xl mx-auto">
+              <h4 className="text-lg font-semibold text-[#5a5b7f] mb-2">¿Necesitas formación personalizada?</h4>
+              <p className="text-gray-600 mb-4">
+                Diseño cursos a medida según las necesidades específicas de tu organización.
+              </p>
+              <a
+                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3dPNmLgARl5QQtwFkO6oBuSsCHnBPkow5biWhKCdEBM7V-FYwHH3omucOgrgZqVDR5RubmXYuc"
+                className="btn-secondary inline-block"
+              >
+                Solicitar consulta
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mis reflexiones Section */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="fade-in mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f] text-center">
+              Mis reflexiones
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed text-center">
+              Reflexiones sobre comunicación, inteligencia artificial y el futuro del trabajo
+            </p>
+          </div>
+          <div className="text-center mb-12">
             <Mail className="w-16 h-16 text-[#39bdf5] mx-auto mb-6" />
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f]">
               Mantente Informado
@@ -292,6 +326,7 @@ function App() {
             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-8">
               Suscríbete a mi newsletter para recibir las últimas actualizaciones sobre comunicación e inteligencia artificial
             </p>
+          </div>
           <form onSubmit={handleNewsletterSubmit} className="slide-up max-w-lg mx-auto">
             <div className="flex flex-col sm:flex-row gap-4 mb-4">
               <input
@@ -313,7 +348,7 @@ function App() {
               Respetamos tu privacidad. Puedes cancelar la suscripción en cualquier momento.
             </p>
           </form>
-          </div>
+        </div>
       </section>
 
       {/* Contact Section */}
