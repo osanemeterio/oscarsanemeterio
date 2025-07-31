@@ -292,7 +292,6 @@ function App() {
             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-8">
               Suscríbete a mi newsletter para recibir las últimas actualizaciones sobre comunicación e inteligencia artificial
             </p>
-          </div>
           <form onSubmit={handleNewsletterSubmit} className="slide-up max-w-lg mx-auto">
             <div className="flex flex-col sm:flex-row gap-4 mb-4">
               <input
@@ -314,6 +313,7 @@ function App() {
               Respetamos tu privacidad. Puedes cancelar la suscripción en cualquier momento.
             </p>
           </form>
+          </div>
         </div>
       </section>
 
