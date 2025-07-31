@@ -256,7 +256,7 @@ function App() {
       </section>
 
       {/* Oferta Formativa Section */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <div className="fade-in mb-8">
@@ -308,7 +308,7 @@ function App() {
       </section>
 
       {/* Mis reflexiones Section */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="fade-in mb-8">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f] text-center">
@@ -319,7 +319,20 @@ function App() {
             </p>
           </div>
           <div className="text-center mb-12">
-            <Mail className="w-16 h-16 text-[#39bdf5] mx-auto mb-6" />
+            <div className="fade-in mb-8">
+              <Mail className="w-16 h-16 text-[#39bdf5] mx-auto mb-6" />
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f]">
+                Mantente Informado
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter Section */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f]">
               Mantente Informado
             </h2>
