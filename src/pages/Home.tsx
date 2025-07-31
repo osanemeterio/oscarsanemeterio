@@ -308,20 +308,21 @@ function App() {
       </section>
 
       {/* Mis reflexiones Section */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-[#5a5b7f] relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#5a5b7f] via-[#5a5b7f] to-[#4a4b6f] opacity-90"></div>
         <div className="max-w-4xl mx-auto">
-          <div className="fade-in mb-8">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f] text-center">
+          <div className="fade-in mb-8 relative z-10">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white text-center">
               Mis reflexiones
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed text-center">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed text-center">
               Reflexiones sobre comunicación, inteligencia artificial y el futuro del trabajo
             </p>
           </div>
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 relative z-10">
             <div className="fade-in mb-8">
               <Mail className="w-16 h-16 text-[#39bdf5] mx-auto mb-6" />
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f]">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
                 Mantente Informado
               </h2>
             </div>
@@ -365,21 +366,22 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="fade-in text-4xl md:text-5xl font-bold mb-16 text-[#5a5b7f]">
+      <section className="py-20 px-4 bg-[#5a5b7f] relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#5a5b7f] via-[#5a5b7f] to-[#4a4b6f] opacity-90"></div>
+        <div className="max-w-2xl mx-auto text-center relative z-10">
+          <h2 className="fade-in text-4xl md:text-5xl font-bold mb-16 text-white">
             Contáctame
           </h2>
           
-          <div className="slide-up bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100">
+          <div className="slide-up bg-white/10 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20">
             <div className="space-y-8">
               {/* Email Contact */}
               <div className="text-center">
                 <Mail className="w-12 h-12 text-[#39bdf5] mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-[#5a5b7f] mb-2">Email</h3>
+                <h3 className="text-xl font-semibold text-white mb-2">Email</h3>
                 <a 
                   href="mailto:osanemeterio@conexionpublica.es"
-                  className="text-lg text-gray-600 hover:text-[#39bdf5] transition-colors"
+                  className="text-lg text-white/90 hover:text-[#39bdf5] transition-colors"
                 >
                   osanemeterio@conexionpublica.es
                 </a>
@@ -388,10 +390,10 @@ function App() {
               {/* Phone Contact */}
               <div className="text-center">
                 <Phone className="w-12 h-12 text-[#39bdf5] mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-[#5a5b7f] mb-2">Teléfono</h3>
+                <h3 className="text-xl font-semibold text-white mb-2">Teléfono</h3>
                 <a 
                   href="tel:+34676060487"
-                  className="text-lg text-gray-600 hover:text-[#39bdf5] transition-colors"
+                  className="text-lg text-white/90 hover:text-[#39bdf5] transition-colors"
                 >
                   +34 676 060 487
                 </a>
@@ -400,8 +402,8 @@ function App() {
               {/* Location */}
               <div className="text-center">
                 <MapPin className="w-12 h-12 text-[#39bdf5] mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-[#5a5b7f] mb-2">Ubicación</h3>
-                <p className="text-lg text-gray-600">
+                <h3 className="text-xl font-semibold text-white mb-2">Ubicación</h3>
+                <p className="text-lg text-white/90">
                   Cantabria, España
                 </p>
               </div>
