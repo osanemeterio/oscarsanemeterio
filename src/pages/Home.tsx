@@ -270,35 +270,41 @@ function App() {
             </div>
           </div>
           
-          <div className="slide-up mb-12">
-            <div className="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 max-w-2xl mx-auto text-center">
-              <h3 className="text-2xl font-bold text-[#5a5b7f] mb-4">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="slide-up service-card text-center">
+              <div className="mb-4 flex justify-center">
+                <GraduationCap className="w-10 h-10 text-[#39bdf5]" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
                 Mi Oferta Formativa en IA
               </h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed mb-6">
                 Descarga mi catálogo completo de cursos especializados en inteligencia artificial aplicada a la comunicación y la gestión organizacional.
               </p>
               <a
                 href="/Mi-oferta-formativa-en-IA.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary inline-flex items-center space-x-2 text-lg"
+                className="btn-primary inline-flex items-center space-x-2"
               >
                 <GraduationCap className="w-5 h-5" />
-                <span>Descargar Oferta Formativa</span>
+                <span>Descargar PDF</span>
               </a>
             </div>
-          </div>
-          
-          <div className="slide-up text-center">
-            <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-[#39bdf5] max-w-2xl mx-auto">
-              <h4 className="text-lg font-semibold text-[#5a5b7f] mb-2">¿Necesitas formación personalizada?</h4>
-              <p className="text-gray-600 mb-4">
-                Diseño cursos a medida según las necesidades específicas de tu organización.
+            
+            <div className="slide-up service-card text-center">
+              <div className="mb-4 flex justify-center">
+                <Users className="w-10 h-10 text-[#39bdf5]" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
+                Formación Personalizada
+              </h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Diseño cursos a medida según las necesidades específicas de tu organización. Formación adaptada a tu sector y objetivos.
               </p>
               <a
                 href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3dPNmLgARl5QQtwFkO6oBuSsCHnBPkow5biWhKCdEBM7V-FYwHH3omucOgrgZqVDR5RubmXYuc"
-                className="btn-secondary inline-block"
+                className="btn-primary inline-block"
               >
                 Solicitar consulta
               </a>
