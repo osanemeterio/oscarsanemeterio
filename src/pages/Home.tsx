@@ -314,7 +314,6 @@ function App() {
             </p>
           </form>
           </div>
-        </div>
       </section>
 
       {/* Contact Section */}
