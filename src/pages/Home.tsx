@@ -116,7 +116,7 @@ function App() {
       </section>
 
       {/* Core Services Section */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="fade-in text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f]">
@@ -149,7 +149,7 @@ function App() {
         </div>
       </section>
 
-<section className="py-20 px-4 bg-white">
+<section className="py-20 px-4 bg-gray-50">
   <div className="max-w-6xl mx-auto">
     <div className="text-center mb-16">
       <h2 className="fade-in text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f]">
