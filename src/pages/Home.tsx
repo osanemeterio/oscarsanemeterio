@@ -480,12 +480,11 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#5a5b7f] text-white py-16 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#5a5b7f] via-[#5a5b7f] to-[#4a4b6f] opacity-90"></div>
+      <footer className="bg-gray-100 text-gray-800 py-16 px-4">
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             <div className="mb-8 md:mb-0 text-center md:text-left">
-              <p className="text-white/90 text-xl md:text-2xl font-medium">
+              <p className="text-gray-700 text-xl md:text-2xl font-medium">
                 Ayudo a potenciar organizaciones con propósito
               </p>
             </div>
@@ -494,7 +493,7 @@ function App() {
                 href="https://www.linkedin.com/in/osanemeterio/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-[#39bdf5] hover:text-white transition-colors duration-300 p-2 rounded-lg hover:bg-white/10"
+                className="text-[#39bdf5] hover:text-[#5a5b7f] transition-colors duration-300 p-2 rounded-lg hover:bg-gray-200"
               >
                 <Linkedin className="w-7 h-7" />
               </a>
@@ -502,7 +501,7 @@ function App() {
                 href="https://twitter.com/osanemeterio" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-[#39bdf5] hover:text-white transition-colors duration-300 p-2 rounded-lg hover:bg-white/10"
+                className="text-[#39bdf5] hover:text-[#5a5b7f] transition-colors duration-300 p-2 rounded-lg hover:bg-gray-200"
               >
                 <Twitter className="w-7 h-7" />
               </a>
@@ -510,13 +509,13 @@ function App() {
                 href="https://osanemeterio.substack.com/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-[#39bdf5] hover:text-white transition-colors duration-300 p-2 rounded-lg hover:bg-white/10"
+                className="text-[#39bdf5] hover:text-[#5a5b7f] transition-colors duration-300 p-2 rounded-lg hover:bg-gray-200"
               >
                 <BookOpen className="w-7 h-7" />
               </a>
             </div>
           </div>
-          <div className="border-t border-white/20 pt-8 text-center text-white/70">
+          <div className="border-t border-gray-300 pt-8 text-center text-gray-600">
             © 2025 Conexión Pública. Todos los derechos reservados.
           </div>
         </div>
