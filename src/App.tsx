@@ -12,7 +12,7 @@ import MentoriaSeguimiento from './pages/MentoriaSeguimiento'
 import PuntoYAparte from './pages/PuntoYAparte'
 import Blog from './pages/Blog'
 import ComunicacionInstitucionalIA from './pages/ComunicacionInstitucionalIA'
-import ONGsCantabriaImpacto from './pages/ONGsCantabriaImpacto'
+import ONGsCantabriaImpacto from './pages/ONGsCantabriaImpacto.tsx'
 
 function App() {
   return (
