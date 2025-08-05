@@ -34,6 +34,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/comunicacion-institucional-ia" element={<ComunicacionInstitucionalIA />} />
         <Route path="/blog/ongs-cantabria-impacto" element={<ONGsCantabriaImpacto />} />
+        <Route path="/manuales-ia" element={<ManualesIA />} />
       </Routes>
     </Router>
   )
