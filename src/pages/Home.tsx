@@ -355,6 +355,20 @@ function App() {
               </p>
               <span className="text-[#39bdf5] font-medium">Leer más →</span>
             </Link>
+
+            {/* Nueva entrada sobre ONGs en Cantabria */}
+            <Link
+              to="/blog/ongs-cantabria-impacto"
+              className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
+            >
+              <h3 className="text-xl font-bold text-white mb-3">
+                ONGs en Cantabria: impulsa su impacto con comunicación estratégica
+              </h3>
+              <p className="text-white/90 mb-4 leading-relaxed">
+                Reflexiones sobre cómo las organizaciones sin ánimo de lucro pueden potenciar su mensaje y amplificar su impacto social.
+              </p>
+              <span className="text-[#39bdf5] font-medium">Leer más →</span>
+            </Link>
           </div>
           
           <div className="slide-up bg-white/10 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20 max-w-2xl mx-auto">

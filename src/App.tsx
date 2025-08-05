@@ -12,6 +12,7 @@ import MentoriaSeguimiento from './pages/MentoriaSeguimiento'
 import PuntoYAparte from './pages/PuntoYAparte'
 import Blog from './pages/Blog'
 import ComunicacionInstitucionalIA from './pages/ComunicacionInstitucionalIA'
+import ONGsCantabriaImpacto from './pages/ONGsCantabriaImpacto'
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/comunicacion-institucional-ia" element={<ComunicacionInstitucionalIA />} />
+        <Route path="/blog/ongs-cantabria-impacto" element={<ONGsCantabriaImpacto />} />
       </Routes>
     </Router>
   )
