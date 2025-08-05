@@ -13,6 +13,7 @@ import PuntoYAparte from './pages/PuntoYAparte'
 import Blog from './pages/Blog'
 import ComunicacionInstitucionalIA from './pages/ComunicacionInstitucionalIA'
 import ONGsCantabriaImpacto from './pages/ONGsCantabriaImpacto.tsx'
+import ManualesIA from './pages/ManualesIA'
 
 function App() {
   return (

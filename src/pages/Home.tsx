@@ -224,6 +224,29 @@ function App() {
     </div>
   </div>
 </section>
+
+      {/* Manuales IA Section */}
+      <section className="py-12 px-4 bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="bg-blue-50 p-8 rounded-2xl shadow-lg border border-blue-200">
+            <h3 className="text-2xl font-bold text-[#5a5b7f] mb-4">
+              Manuales prácticos de IA
+            </h3>
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              Accede a una biblioteca completa de manuales y guías prácticas sobre inteligencia artificial, 
+              herramientas específicas y casos de uso reales.
+            </p>
+            <Link
+              to="/manuales-ia"
+              className="btn-primary inline-flex items-center space-x-2"
+            >
+              <FileText className="w-5 h-5" />
+              <span>Ver manuales disponibles</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Personal Introduction Section */}
       <section className="py-20 px-4 bg-[#5a5b7f] relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#5a5b7f] via-[#5a5b7f] to-[#4a4b6f] opacity-90"></div>
