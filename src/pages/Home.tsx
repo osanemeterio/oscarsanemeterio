@@ -328,20 +328,6 @@ function App() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            {/* Entrada destacada del blog */}
-            <Link
-              to="/blog/punto-y-aparte"
-              className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
-            >
-              <h3 className="text-xl font-bold text-white mb-3">
-                Punto y aparte: comienzan los servicios de consultoría
-              </h3>
-              <p className="text-white/90 mb-4 leading-relaxed">
-                Reflexiono sobre mi experiencia en el Coworking Santander 2025 y cómo enfoco mi propuesta de comunicación estratégica con IA.
-              </p>
-              <span className="text-[#39bdf5] font-medium">Leer más →</span>
-            </Link>
-
             {/* Entrada sobre comunicación institucional e IA */}
             <Link
               to="/blog/comunicacion-institucional-ia"
@@ -356,7 +342,7 @@ function App() {
               <span className="text-[#39bdf5] font-medium">Leer más →</span>
             </Link>
 
-            {/* Nueva entrada sobre ONGs en Cantabria */}
+            {/* Entrada sobre ONGs en Cantabria */}
             <Link
               to="/blog/ongs-cantabria-impacto"
               className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
