@@ -279,6 +279,44 @@ function App() {
               <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
                 Habilidades IA
               </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Curso específico para adquirir las competencias básicas para entender cómo funciona la IA y adaptarse a cualquier entorno.
+              </p>
+            </div>
+            
+            <div className="slide-up service-card text-center">
+              <div className="mb-4 flex justify-center">
+                <Building2 className="w-10 h-10 text-[#39bdf5]" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
+                IA en las instituciones
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Curso que imparto en ADR Formación sobre comunicación institucional en la era de la IA. Todos los datos disponibles en el enlace.
+              </p>
+            </div>
+            
+            <div className="slide-up service-card text-center">
+              <div className="mb-4 flex justify-center">
+                <Users className="w-10 h-10 text-[#39bdf5]" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
+                Formación Personalizada
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Diseño cursos a medida según las necesidades específicas de tu organización. Formación adaptada a tu sector y objetivos.
+              </p>
+            </div>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="slide-up service-card text-center">
+              <div className="mb-4 flex justify-center">
+                <GraduationCap className="w-10 h-10 text-[#39bdf5]" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
+                Habilidades IA
+              </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Curso específico para adquirir las competencias básicas para entender cómo funciona la IA y adaptarse a cualquier entorno.
               </p>
