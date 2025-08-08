@@ -295,6 +295,29 @@ function App() {
             
             <div className="slide-up service-card text-center">
               <div className="mb-4 flex justify-center">
+                <Building2 className="w-10 h-10 text-[#39bdf5]" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
+                IA en las instituciones
+              </h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Curso que imparto en ADR Formación sobre comunicación institucional en la era de la IA. Formación especializada para profesionales del sector público.
+              </p>
+              <a
+                href="https://www.adrformacion.com/curso-online/comunicacion-institucional-era-ia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary inline-flex items-center space-x-2"
+              >
+                <Building2 className="w-5 h-5" />
+                <span>Ver curso en ADR</span>
+              </a>
+            </div>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            <div className="slide-up service-card text-center">
+              <div className="mb-4 flex justify-center">
                 <Users className="w-10 h-10 text-[#39bdf5]" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
@@ -311,25 +334,25 @@ function App() {
                 <span>Solicitar consulta</span>
               </a>
             </div>
-          </div>
-          
-          <div className="slide-up bg-white p-8 rounded-2xl shadow-lg border border-gray-100 max-w-2xl mx-auto text-center">
-            <div className="mb-4 flex justify-center">
-              <FileText className="w-12 h-12 text-[#39bdf5]" />
+            
+            <div className="slide-up service-card text-center">
+              <div className="mb-4 flex justify-center">
+                <FileText className="w-10 h-10 text-[#39bdf5]" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
+                Manuales prácticos de IA
+              </h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Accede a una biblioteca completa de manuales y guías prácticas sobre inteligencia artificial, herramientas específicas y casos de uso reales.
+              </p>
+              <Link
+                to="/manuales-ia"
+                className="btn-primary inline-flex items-center space-x-2"
+              >
+                <FileText className="w-5 h-5" />
+                <span>Ver manuales</span>
+              </Link>
             </div>
-            <h3 className="text-2xl font-bold text-[#5a5b7f] mb-4">
-              Manuales prácticos de IA
-            </h3>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Accede a una biblioteca completa de manuales y guías prácticas sobre inteligencia artificial, herramientas específicas y casos de uso reales.
-            </p>
-            <Link
-              to="/manuales-ia"
-              className="btn-primary inline-flex items-center space-x-2"
-            >
-              <FileText className="w-5 h-5" />
-              <span>Ver manuales</span>
-            </Link>
           </div>
         </div>
       </section>
