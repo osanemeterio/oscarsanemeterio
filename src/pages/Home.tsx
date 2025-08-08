@@ -325,6 +325,84 @@ function App() {
         </div>
       </section>
 
+      {/* Oferta Formativa Section */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="fade-in mb-8">
+              <GraduationCap className="w-16 h-16 text-[#39bdf5] mx-auto mb-6" />
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#5a5b7f]">
+                Oferta Formativa
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Descarga mi catálogo completo de cursos especializados en inteligencia artificial
+              </p>
+            </div>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            <div className="slide-up service-card text-center">
+              <div className="mb-4 flex justify-center">
+                <GraduationCap className="w-10 h-10 text-[#39bdf5]" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
+                Habilidades IA
+              </h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Curso específico para adquirir las competencias básicas para entender cómo funciona la IA y adaptarse a cualquier entorno.
+              </p>
+              <a
+                href="/Mi-oferta-formativa-en-IA.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary inline-flex items-center space-x-2"
+              >
+                <GraduationCap className="w-5 h-5" />
+                <span>Descargar PDF</span>
+              </a>
+            </div>
+            
+            <div className="slide-up service-card text-center">
+              <div className="mb-4 flex justify-center">
+                <Users className="w-10 h-10 text-[#39bdf5]" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
+                Formación Personalizada
+              </h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Diseño cursos a medida según las necesidades específicas de tu organización. Formación adaptada a tu sector y objetivos.
+              </p>
+              <a
+                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3dPNmLgARl5QQtwFkO6oBuSsCHnBPkow5biWhKCdEBM7V-FYwHH3omucOgrgZqVDR5RubmXYuc"
+                className="btn-primary inline-flex items-center space-x-2"
+              >
+                <Users className="w-5 h-5" />
+                <span>Solicitar consulta</span>
+              </a>
+            </div>
+          </div>
+          
+          <div className="slide-up bg-white p-8 rounded-2xl shadow-lg border border-gray-100 max-w-2xl mx-auto text-center">
+            <div className="mb-4 flex justify-center">
+              <FileText className="w-12 h-12 text-[#39bdf5]" />
+            </div>
+            <h3 className="text-2xl font-bold text-[#5a5b7f] mb-4">
+              Manuales prácticos de IA
+            </h3>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Accede a una biblioteca completa de manuales y guías prácticas sobre inteligencia artificial, herramientas específicas y casos de uso reales.
+            </p>
+            <Link
+              to="/manuales-ia"
+              className="btn-primary inline-flex items-center space-x-2"
+            >
+              <FileText className="w-5 h-5" />
+              <span>Ver manuales</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Mis reflexiones Section */}
       <section className="py-20 px-4 bg-[#5a5b7f] relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#5a5b7f] via-[#5a5b7f] to-[#4a4b6f] opacity-90"></div>
