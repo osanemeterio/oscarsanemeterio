@@ -272,6 +272,7 @@ function App() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
             <div className="slide-up service-card text-center">
               <div className="mb-4 flex justify-center">
                 <GraduationCap className="w-10 h-10 text-[#39bdf5]" />
@@ -279,7 +280,7 @@ function App() {
               <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
                 Habilidades IA
               </h3>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-gray-600 leading-relaxed mb-4">
                 Curso específico para adquirir las competencias básicas para entender cómo funciona la IA y adaptarse a cualquier entorno.
               </p>
               <a
@@ -300,7 +301,7 @@ function App() {
               <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
                 IA en las instituciones
               </h3>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-gray-600 leading-relaxed mb-4">
                 Curso que imparto en ADR Formación sobre comunicación institucional en la era de la IA. Todos los datos disponibles en el enlace.
               </p>
               <a
@@ -313,9 +314,7 @@ function App() {
                 <span>Ver curso en ADR</span>
               </a>
             </div>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            
             <div className="slide-up service-card text-center">
               <div className="mb-4 flex justify-center">
                 <Users className="w-10 h-10 text-[#39bdf5]" />
@@ -323,7 +322,7 @@ function App() {
               <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
                 Formación Personalizada
               </h3>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-gray-600 leading-relaxed mb-4">
                 Diseño cursos a medida según las necesidades específicas de tu organización. Formación adaptada a tu sector y objetivos.
               </p>
               <a
