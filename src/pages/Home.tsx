@@ -277,10 +277,10 @@ function App() {
                 <GraduationCap className="w-10 h-10 text-[#39bdf5]" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-[#5a5b7f]">
-                Mi Oferta Formativa en IA
+                Habilidades IA
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Descarga mi catálogo completo de cursos especializados en inteligencia artificial aplicada a la comunicación y la gestión organizacional.
+                Curso específico para adquirir las competencias básicas para entender cómo funciona la IA y adaptarse a cualquier entorno.
               </p>
               <a
                 href="/Mi-oferta-formativa-en-IA.pdf"
