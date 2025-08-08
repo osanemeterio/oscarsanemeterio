@@ -318,6 +318,13 @@ function App() {
                 Habilidades IA
               </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
+                Curso específico para adquirir las competencias básicas para entender cómo funciona la IA y adaptarse a cualquier entorno.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Mis reflexiones Section */}
       <section className="py-20 px-4 bg-[#5a5b7f] relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#5a5b7f] via-[#5a5b7f] to-[#4a4b6f] opacity-90"></div>
