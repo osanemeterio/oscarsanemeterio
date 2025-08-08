@@ -286,7 +286,7 @@ function App() {
                 href="/Mi-oferta-formativa-en-IA.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary inline-flex items-center space-x-2"
+                className="btn-primary inline-flex items-center space-x-2 w-full justify-center"
               >
                 <GraduationCap className="w-5 h-5" />
                 <span>Descargar PDF</span>
@@ -307,7 +307,7 @@ function App() {
                 href="https://www.adrformacion.com/curso-online/comunicacion-institucional-era-ia"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary inline-flex items-center space-x-2"
+                className="btn-primary inline-flex items-center space-x-2 w-full justify-center"
               >
                 <Building2 className="w-5 h-5" />
                 <span>Ver curso en ADR</span>
@@ -326,7 +326,7 @@ function App() {
               </p>
               <a
                 href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3dPNmLgARl5QQtwFkO6oBuSsCHnBPkow5biWhKCdEBM7V-FYwHH3omucOgrgZqVDR5RubmXYuc"
-                className="btn-primary inline-block"
+                className="btn-primary inline-flex items-center w-full justify-center"
               >
                 Solicitar consulta
               </a>
