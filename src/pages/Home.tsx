@@ -22,7 +22,29 @@ function App() {
     const animatedElements = document.querySelectorAll('.fade-in, .slide-up')
     animatedElements.forEach((el) => observer.observe(el))
 
-    return () => observer.disconnect()
+    // Handle hash navigation
+    const handleHashChange = () => {
+      const hash = window.location.hash
+      if (hash) {
+        const element = document.querySelector(hash)
+        if (element) {
+          setTimeout(() => {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          }, 100)
+        }
+      }
+    }
+
+    // Handle initial hash on page load
+    handleHashChange()
+
+    // Listen for hash changes
+    window.addEventListener('hashchange', handleHashChange)
+
+    return () => {
+      observer.disconnect()
+      window.removeEventListener('hashchange', handleHashChange)
+    }
   }, [])
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
