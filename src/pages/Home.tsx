@@ -258,7 +258,8 @@ function App() {
 
       {/* Oferta Formativa Section */}
       {/* GPT-5 Course Special Banner */}
-      <section id="curso-gpt5" className="py-12 px-4 bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-700 relative overflow-hidden">
+      <section className="py-12 px-4 bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-700 relative overflow-hidden">
+        <div id="curso-gpt5" className="absolute -top-20"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-purple-600/90 via-blue-600/90 to-indigo-700/90"></div>
         <div className="absolute top-0 left-0 w-full h-full">
           <div className="absolute top-10 left-10 w-20 h-20 bg-yellow-400/20 rounded-full animate-pulse"></div>
