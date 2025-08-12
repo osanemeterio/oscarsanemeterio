@@ -42,62 +42,28 @@ export default function DividendoOcultoComunicacionPage() {
           {/* Cuerpo del contenido */}
           <div className="mb-12">
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <h2 className="text-3xl font-bold text-[#5a5b7f] mb-6">El valor oculto de comunicar bien</h2>
+              
               <div className="text-lg text-gray-700 leading-relaxed space-y-6">
+                <p>
+                  En este artículo analizo cómo la comunicación ha pasado de ser considerada un gasto inevitable 
+                  a convertirse en uno de los motores de valor más importantes para las organizaciones modernas.
+                </p>
                 
-                <div>
-                  <h3 className="text-2xl font-bold text-[#5a5b7f] mb-4">De gasto inevitable a motor de valor</h3>
-                  <p className="mb-4">
-                    Históricamente, la comunicación corporativa ha ocupado un lugar poco visible en el presupuesto, 
-                    etiquetada como gasto administrativo. Sin embargo, los estudios la sitúan en el centro de la rentabilidad. 
-                    Según Towers Watson, las empresas con comunicación interna efectiva obtienen un retorno total para el 
-                    accionista un <strong>47% superior</strong> al de aquellas con comunicación deficiente.
-                  </p>
-                  <p>
-                    Peter Drucker ya advertía que el 60% de los problemas administrativos tienen su origen en una 
-                    comunicación ineficaz. Esto se traduce en malentendidos, retrasos, duplicación de tareas y pérdida 
-                    de oportunidades. En cambio, cuando la comunicación es estratégica y bidireccional, la información 
-                    fluye, la confianza crece y la organización gana agilidad.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-2xl font-bold text-[#5a5b7f] mb-4">El círculo virtuoso interno-externo</h3>
-                  <p className="mb-4">
-                    La distinción entre comunicación interna y externa se ha vuelto difusa. La información interna 
-                    acaba proyectándose hacia el exterior, y la imagen externa influye en la moral de la plantilla. 
-                    Una comunicación interna sólida mejora el clima laboral y convierte a los empleados en embajadores 
-                    de marca.
-                  </p>
-                  <p>
-                    Este círculo virtuoso se apoya en dos pilares: <strong>confianza y seguridad psicológica</strong>. 
-                    La primera se construye con mensajes claros, transparencia y coherencia entre lo que se dice y lo 
-                    que se hace. La segunda se logra cuando las personas pueden opinar, proponer y reconocer errores 
-                    sin temor a represalias.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-2xl font-bold text-[#5a5b7f] mb-4">Impacto medible y oportunidad local</h3>
-                  <p className="mb-4">
-                    Medir el "dividendo oculto" es posible. Además del ya citado +47% de ROI, Gallup calcula que una 
-                    comunicación interna sólida puede aumentar la productividad un <strong>20%</strong> y reducir la 
-                    rotación de personal hasta un <strong>50%</strong>.
-                  </p>
-                  <p>
-                    En España, y especialmente en Cantabria, existe un margen de mejora significativo: solo el 32% 
-                    de los empleados declara estar satisfecho con la comunicación interna de su empresa. Para quienes 
-                    sepan actuar, esta es una oportunidad clara.
-                  </p>
-                </div>
-
+                <p>
+                  Exploro los datos que demuestran el impacto real de una comunicación estratégica: desde el 47% 
+                  de mayor retorno para el accionista hasta la reducción del 50% en rotación de personal.
+                </p>
+                
                 <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-[#39bdf5] my-8">
-                  <h4 className="text-xl font-semibold text-[#5a5b7f] mb-3">El momento de actuar</h4>
-                  <p className="text-gray-700">
-                    El dividendo oculto de la comunicación está disponible, esperando a ser aprovechado. 
-                    Las empresas y organizaciones que lo entienden y actúan hoy serán las que lideren mañana. 
-                    <strong> Invertir en comunicación estratégica no es un lujo: es una de las decisiones más 
-                    rentables y transformadoras que puede tomar un líder.</strong>
-                  </p>
+                  <h3 className="text-xl font-semibold text-[#5a5b7f] mb-3">Puntos clave del artículo:</h3>
+                  <ul className="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Por qué la comunicación genera un ROI del 47% superior</li>
+                    <li>El círculo virtuoso entre comunicación interna y externa</li>
+                    <li>Datos concretos sobre productividad y retención de talento</li>
+                    <li>La oportunidad específica en España y Cantabria</li>
+                    <li>Cómo medir y aprovechar este "dividendo oculto"</li>
+                  </ul>
                 </div>
                 
                 <div className="text-center mt-8">
