@@ -457,24 +457,7 @@ function App() {
               <span className="text-[#39bdf5] font-medium">Leer más →</span>
             </Link>
 
-            {/* Entrada sobre comunicación institucional e IA */}
-            <Link
-              to="/blog/comunicacion-institucional-ia"
-              className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
-            >
-              <h3 className="text-xl font-bold text-white mb-3">
-                Comunicación institucional en la era de la IA
-              </h3>
-              <p className="text-white/90 mb-4 leading-relaxed">
-                Cómo la inteligencia artificial está transformando la comunicación institucional y los nuevos desafíos que enfrentan las organizaciones.
-              </p>
-              <span className="text-[#39bdf5] font-medium">Leer más →</span>
-            </Link>
-
-            {/* Entrada sobre ONGs en Cantabria - movida a segunda fila */}
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Entrada sobre ONGs en Cantabria */}
             <Link
               to="/blog/ongs-cantabria-impacto"
               className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
@@ -487,16 +470,7 @@ function App() {
               </p>
               <span className="text-[#39bdf5] font-medium">Leer más →</span>
             </Link>
-            
-            {/* Espacio para futuros artículos */}
-            <div className="slide-up bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10 text-center">
-              <h3 className="text-lg font-medium text-white/70 mb-3">
-                Próximamente más reflexiones
-              </h3>
-              <p className="text-white/50 text-sm">
-                Nuevos artículos sobre comunicación e inteligencia artificial
-              </p>
-            </div>
+
           </div>
           
           <div className="slide-up bg-white/10 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20 max-w-2xl mx-auto">
