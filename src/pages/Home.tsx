@@ -443,6 +443,20 @@ function App() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Nueva entrada sobre el dividendo oculto */}
+            <Link
+              to="/blog/dividendo-oculto-comunicacion"
+              className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
+            >
+              <h3 className="text-xl font-bold text-white mb-3">
+                El dividendo oculto de la comunicación
+              </h3>
+              <p className="text-white/90 mb-4 leading-relaxed">
+                Las organizaciones que comunican mejor no solo generan más confianza, sino que multiplican su rentabilidad y retienen mejor el talento. Este es el dividendo oculto que pocos líderes miden.
+              </p>
+              <span className="text-[#39bdf5] font-medium">Leer más →</span>
+            </Link>
+
             {/* Entrada sobre comunicación institucional e IA */}
             <Link
               to="/blog/comunicacion-institucional-ia"
@@ -457,7 +471,10 @@ function App() {
               <span className="text-[#39bdf5] font-medium">Leer más →</span>
             </Link>
 
-            {/* Entrada sobre ONGs en Cantabria */}
+            {/* Entrada sobre ONGs en Cantabria - movida a segunda fila */}
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
             <Link
               to="/blog/ongs-cantabria-impacto"
               className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
@@ -470,6 +487,16 @@ function App() {
               </p>
               <span className="text-[#39bdf5] font-medium">Leer más →</span>
             </Link>
+            
+            {/* Espacio para futuros artículos */}
+            <div className="slide-up bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10 text-center">
+              <h3 className="text-lg font-medium text-white/70 mb-3">
+                Próximamente más reflexiones
+              </h3>
+              <p className="text-white/50 text-sm">
+                Nuevos artículos sobre comunicación e inteligencia artificial
+              </p>
+            </div>
           </div>
           
           <div className="slide-up bg-white/10 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20 max-w-2xl mx-auto">

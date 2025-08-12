@@ -14,6 +14,7 @@ import Blog from './pages/Blog'
 import ComunicacionInstitucionalIA from './pages/ComunicacionInstitucionalIA'
 import ONGsCantabriaImpacto from './pages/ONGsCantabriaImpacto.tsx'
 import ManualesIA from './pages/ManualesIA'
+import DividendoOcultoComunicacion from './pages/DividendoOcultoComunicacion'
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/blog/comunicacion-institucional-ia" element={<ComunicacionInstitucionalIA />} />
         <Route path="/blog/ongs-cantabria-impacto" element={<ONGsCantabriaImpacto />} />
         <Route path="/manuales-ia" element={<ManualesIA />} />
+        <Route path="/blog/dividendo-oculto-comunicacion" element={<DividendoOcultoComunicacion />} />
       </Routes>
     </Router>
   )
