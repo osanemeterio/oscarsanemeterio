@@ -457,16 +457,16 @@ function App() {
               <span className="text-[#39bdf5] font-medium">Leer más →</span>
             </Link>
 
-            {/* Retener talento empieza por comunicar mejor */}
+            {/* ONGs en Cantabria: impulsa su impacto con comunicación estratégica */}
             <Link
-              to="/blog/retener-talento-comunicar"
+              to="/blog/ongs-cantabria-impacto"
               className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
             >
               <h3 className="text-xl font-bold text-white mb-3">
-                Retener talento empieza por comunicar mejor
+                ONGs en Cantabria: impulsa su impacto con comunicación estratégica
               </h3>
               <p className="text-white/90 mb-4 leading-relaxed">
-                En un mercado laboral competitivo, la clave para retener el mejor talento no está en soluciones complejas, sino en algo más fundamental: comunicar mejor.
+                Las organizaciones sin ánimo de lucro en Cantabria tienen un potencial enorme para generar impacto social, pero muchas veces su mensaje no llega con la fuerza necesaria.
               </p>
               <span className="text-[#39bdf5] font-medium">Leer más →</span>
             </Link>
