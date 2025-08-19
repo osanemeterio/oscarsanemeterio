@@ -69,7 +69,7 @@ export default function ComunicacionInternaPage() {
                 
                 <div className="text-center mt-8">
                   <a 
-                    href="https://osanemeterio.substack.com/p/comunicacion-interna-productividad"
+                    href="https://osanemeterio.substack.com/p/5f46a24c-c594-4f1b-b2eb-e402159acd0c"
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="btn-primary inline-flex items-center space-x-2 text-lg"
