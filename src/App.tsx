@@ -15,6 +15,7 @@ import ComunicacionInstitucionalIA from './pages/ComunicacionInstitucionalIA'
 import ONGsCantabriaImpacto from './pages/ONGsCantabriaImpacto.tsx'
 import ManualesIA from './pages/ManualesIA'
 import DividendoOcultoComunicacion from './pages/DividendoOcultoComunicacion'
+import RetenerTalentoArticle from './pages/RetenerTalentoArticle'
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/blog/ongs-cantabria-impacto" element={<ONGsCantabriaImpacto />} />
         <Route path="/manuales-ia" element={<ManualesIA />} />
         <Route path="/blog/dividendo-oculto-comunicacion" element={<DividendoOcultoComunicacion />} />
+        <Route path="/blog/retener-talento-comunicar" element={<RetenerTalentoArticle />} />
       </Routes>
     </Router>
   )

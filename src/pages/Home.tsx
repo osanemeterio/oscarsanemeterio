@@ -443,21 +443,7 @@ function App() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            {/* Entrada sobre ONGs en Cantabria */}
-            <Link
-              to="/blog/ongs-cantabria-impacto"
-              className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
-            >
-              <h3 className="text-xl font-bold text-white mb-3">
-                ONGs en Cantabria: impulsa su impacto con comunicación estratégica
-              </h3>
-              <p className="text-white/90 mb-4 leading-relaxed">
-                Reflexiones sobre cómo las organizaciones sin ánimo de lucro pueden potenciar su mensaje y amplificar su impacto social.
-              </p>
-              <span className="text-[#39bdf5] font-medium">Leer más →</span>
-            </Link>
-
-            {/* Nueva entrada sobre el dividendo oculto */}
+            {/* El dividendo oculto de la comunicación */}
             <Link
               to="/blog/dividendo-oculto-comunicacion"
               className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
@@ -467,6 +453,20 @@ function App() {
               </h3>
               <p className="text-white/90 mb-4 leading-relaxed">
                 Las organizaciones que comunican mejor no solo generan más confianza, sino que multiplican su rentabilidad y retienen mejor el talento. Este es el dividendo oculto que pocos líderes miden.
+              </p>
+              <span className="text-[#39bdf5] font-medium">Leer más →</span>
+            </Link>
+
+            {/* Retener talento empieza por comunicar mejor */}
+            <Link
+              to="/blog/retener-talento-comunicar"
+              className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
+            >
+              <h3 className="text-xl font-bold text-white mb-3">
+                Retener talento empieza por comunicar mejor
+              </h3>
+              <p className="text-white/90 mb-4 leading-relaxed">
+                En un mercado laboral competitivo, la clave para retener el mejor talento no está en soluciones complejas, sino en algo más fundamental: comunicar mejor.
               </p>
               <span className="text-[#39bdf5] font-medium">Leer más →</span>
             </Link>
