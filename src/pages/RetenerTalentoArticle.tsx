@@ -31,11 +31,11 @@ export default function RetenerTalentoArticlePage() {
             <div className="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100">
               <h2 className="text-2xl font-bold text-[#5a5b7f] mb-4">Resumen</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                La mayoría de los empleados no decide marcharse de un día para otro. Primero, desconectan: 
-                dejan de aportar ideas, responden con monosílabos y se muestran ausentes. Este proceso invisible 
-                suele tener un origen común: la falta de una comunicación interna efectiva. Cuando no se explica 
-                el rumbo, cuando no se da feedback y cuando las decisiones parecen tomadas en un despacho 
-                inaccesible, el vínculo emocional se rompe mucho antes de que aparezca la carta de renuncia.
+                En un mercado laboral cada vez más competitivo, retener el mejor talento se ha convertido en 
+                una prioridad estratégica. Sin embargo, muchas organizaciones buscan soluciones complejas 
+                cuando la clave está en algo más fundamental: comunicar mejor. Una comunicación interna 
+                efectiva no solo mejora el clima laboral, sino que se convierte en el factor decisivo 
+                para que los profesionales más valiosos decidan quedarse.
               </p>
             </div>
           </div>
@@ -47,25 +47,25 @@ export default function RetenerTalentoArticlePage() {
               
               <div className="text-lg text-gray-700 leading-relaxed space-y-6">
                 <p>
-                  La verdadera marca empleadora se forja en el día a día: en cómo se comunican los logros 
-                  y errores, en si las personas sienten que su voz cuenta, en la coherencia entre lo que 
-                  se dice hacia fuera y lo que se vive dentro.
+                  En este artículo analizo cómo una estrategia de comunicación interna bien diseñada 
+                  puede convertirse en la herramienta más poderosa para retener talento, crear compromiso 
+                  y construir una cultura organizacional sólida.
                 </p>
                 
                 <p>
-                  Las empresas que comunican con claridad y coherencia logran reducir la rotación, 
-                  reforzar la motivación y construir reputación interna y externa, porque los propios 
-                  empleados se convierten en embajadores creíbles de la marca.
+                  Exploro las conexiones entre comunicación efectiva, satisfacción laboral y permanencia 
+                  en la empresa, basándome en datos concretos y casos prácticos que demuestran el impacto 
+                  real de comunicar mejor.
                 </p>
                 
                 <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-[#39bdf5] my-8">
                   <h3 className="text-xl font-semibold text-[#5a5b7f] mb-3">Puntos clave del artículo:</h3>
                   <ul className="list-disc list-inside space-y-2 text-gray-700">
-                    <li>Señales de alarma: cuando la comunicación expulsa talento</li>
-                    <li>La marca empleadora real se construye desde dentro</li>
-                    <li>Cómo los rumores sustituyen a la información oficial</li>
-                    <li>La coherencia entre comunicación interna y externa como ventaja competitiva</li>
-                    <li>Por qué la retención no se compra, se cultiva con cada conversación</li>
+                    <li>Por qué la comunicación es el factor más subestimado en retención de talento</li>
+                    <li>Datos sobre el impacto de la comunicación interna en la permanencia laboral</li>
+                    <li>Estrategias prácticas para mejorar la comunicación con equipos</li>
+                    <li>Cómo crear una cultura de comunicación bidireccional</li>
+                    <li>El ROI de invertir en comunicación interna para retener talento</li>
                   </ul>
                 </div>
                 
