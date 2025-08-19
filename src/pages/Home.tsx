@@ -443,20 +443,6 @@ function App() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            {/* Entrada sobre comunicación interna */}
-            <Link
-              to="/blog/comunicacion-interna"
-              className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left max-w-2xl mx-auto"
-            >
-              <h3 className="text-xl font-bold text-white mb-3">
-                Comunicación interna: productividad, compromiso, retención e innovación
-              </h3>
-              <p className="text-white/90 mb-4 leading-relaxed">
-                Las organizaciones que entienden la comunicación interna como herramienta estratégica multiplican su capacidad para producir más, retener talento y generar ideas innovadoras.
-              </p>
-              <span className="text-[#39bdf5] font-medium">Leer más →</span>
-            </Link>
-
             {/* Entrada sobre el dividendo oculto */}
             <Link
               to="/blog/dividendo-oculto-comunicacion"
@@ -467,6 +453,20 @@ function App() {
               </h3>
               <p className="text-white/90 mb-4 leading-relaxed">
                 Las organizaciones que comunican mejor no solo generan más confianza, sino que multiplican su rentabilidad y retienen mejor el talento. Este es el dividendo oculto que pocos líderes miden.
+              </p>
+              <span className="text-[#39bdf5] font-medium">Leer más →</span>
+            </Link>
+
+            {/* Entrada sobre comunicación interna */}
+            <Link
+              to="/blog/comunicacion-interna"
+              className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left max-w-2xl mx-auto"
+            >
+              <h3 className="text-xl font-bold text-white mb-3">
+                Comunicación interna: productividad, compromiso, retención e innovación
+              </h3>
+              <p className="text-white/90 mb-4 leading-relaxed">
+                Las organizaciones que entienden la comunicación interna como herramienta estratégica multiplican su capacidad para producir más, retener talento y generar ideas innovadoras.
               </p>
               <span className="text-[#39bdf5] font-medium">Leer más →</span>
             </Link>
