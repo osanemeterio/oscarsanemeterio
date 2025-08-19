@@ -71,7 +71,7 @@ export default function RetenerTalentoArticlePage() {
                 
                 <div className="text-center mt-8">
                   <a 
-                    href="https://osanemeterio.substack.com/p/retener-talento-empieza-por-comunicar"
+                    href="https://osanemeterio.substack.com/p/973d4ba5-7983-415f-b903-6b8daccb90c6"
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="btn-primary inline-flex items-center space-x-2 text-lg"
