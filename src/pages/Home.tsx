@@ -446,7 +446,7 @@ function App() {
             {/* Entrada sobre comunicación interna */}
             <Link
               to="/blog/comunicacion-interna"
-              className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left max-w-2xl mx-auto md:col-span-2"
+              className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
             >
               <h3 className="text-xl font-bold text-white mb-3">
                 Comunicación interna: productividad, compromiso, retención e innovación
