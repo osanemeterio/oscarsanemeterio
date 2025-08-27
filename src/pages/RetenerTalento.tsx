@@ -31,11 +31,11 @@ export default function RetenerTalentoPage() {
             <div className="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100">
               <h2 className="text-2xl font-bold text-[#5a5b7f] mb-4">Resumen</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                La retención de talento se ha convertido en uno de los mayores desafíos para las organizaciones. 
-                Más allá de los salarios competitivos y los beneficios, existe un factor que marca la diferencia: 
-                la comunicación. Las empresas que comunican mejor internamente logran retener hasta un 50% más 
-                de su talento, creando un entorno donde los profesionales se sienten valorados, informados y 
-                comprometidos con el proyecto común.
+                La mayoría de los empleados no decide marcharse de un día para otro. Primero, desconectan: 
+                dejan de aportar ideas, responden con monosílabos y se muestran ausentes. Este proceso invisible 
+                suele tener un origen común: la falta de una comunicación interna efectiva. Cuando no se explica 
+                el rumbo, cuando no se da feedback y cuando las decisiones parecen tomadas en un despacho inaccesible, 
+                el vínculo emocional se rompe mucho antes de que aparezca la carta de renuncia.
               </p>
             </div>
           </div>
@@ -43,28 +43,29 @@ export default function RetenerTalentoPage() {
           {/* Cuerpo del contenido */}
           <div className="mb-12">
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-              <h2 className="text-3xl font-bold text-[#5a5b7f] mb-6">La comunicación como herramienta de retención</h2>
+              <h2 className="text-3xl font-bold text-[#5a5b7f] mb-6">La marca empleadora nace dentro</h2>
               
               <div className="text-lg text-gray-700 leading-relaxed space-y-6">
                 <p>
-                  En este artículo analizo cómo una comunicación interna efectiva se convierte en la clave 
-                  para retener el talento más valioso de una organización, creando vínculos que van más allá 
-                  de lo económico.
+                  Muchos directivos invierten en construir una "marca empleadora" de cara al exterior: campañas 
+                  en LinkedIn, ferias de talento, vídeos sobre la cultura corporativa. Todo eso puede atraer… 
+                  pero no retiene.
                 </p>
                 
                 <p>
-                  Exploro las estrategias concretas que utilizan las empresas más exitosas para crear un 
-                  entorno comunicativo que fomente la permanencia, el compromiso y el desarrollo profesional.
+                  La verdadera marca empleadora se forja en el día a día: en cómo se comunican los logros y 
+                  los errores, en si las personas sienten que su voz cuenta, en la coherencia entre lo que 
+                  se dice hacia fuera y lo que se vive dentro.
                 </p>
                 
                 <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-[#39bdf5] my-8">
                   <h3 className="text-xl font-semibold text-[#5a5b7f] mb-3">Puntos clave del artículo:</h3>
                   <ul className="list-disc list-inside space-y-2 text-gray-700">
-                    <li>Por qué la comunicación es más efectiva que los incentivos económicos</li>
-                    <li>El impacto de la transparencia en la retención de talento</li>
-                    <li>Estrategias de comunicación que generan compromiso a largo plazo</li>
-                    <li>Cómo crear canales de comunicación bidireccional efectivos</li>
-                    <li>El papel del reconocimiento y feedback en la fidelización</li>
+                    <li>Señales de alarma que anticipan la fuga de profesionales</li>
+                    <li>Por qué la marca empleadora real se construye desde dentro</li>
+                    <li>La disonancia entre comunicación externa e interna</li>
+                    <li>Cómo la coherencia se convierte en ventaja competitiva</li>
+                    <li>El contrato emocional que va más allá del salario</li>
                   </ul>
                 </div>
                 

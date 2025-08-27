@@ -466,7 +466,7 @@ function App() {
                 Retener talento empieza por comunicar mejor
               </h3>
               <p className="text-white/90 mb-4 leading-relaxed">
-                Las empresas que comunican mejor internamente logran retener hasta un 50% más de su talento, creando un entorno donde los profesionales se sienten valorados y comprometidos.
+                La mayoría de empleados no se marcha de un día para otro: primero desconectan. Este proceso invisible suele tener un origen común: la falta de comunicación interna efectiva que rompe el vínculo emocional.
               </p>
               <span className="text-[#39bdf5] font-medium">Leer más →</span>
             </Link>
