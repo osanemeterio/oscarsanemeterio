@@ -1,11 +1,13 @@
 [build]
-command = "npm i -g npm@latest && npm --version && npm cache clean --force && if [ -f package-lock.json ]; then npm ci --no-audit --prefer-offline; else npm install --no-audit; fi && npm run build"
+command = "npm --version && npm cache clean --force && if [ -f package-lock.json ]; then npm ci --no-audit --prefer-offline; else npm install --no-audit; fi && npm run build"
 publish = "dist"
 
 [build.environment]
 NODE_VERSION = "18"
+NPM_VERSION = "10.9.0"
 NPM_CONFIG_FUND = "false"
 NPM_CONFIG_AUDIT = "false"
+NPM_FLAGS = "--legacy-peer-deps"
 
 [[redirects]]
   from = "/*"
