@@ -112,7 +112,7 @@ function App() {
           <div className="fade-in mb-12">
            <div className="text-center mb-6">
   <h2 className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
-    Prueba
+    Oscar San Emeterio Tapia
   </h2>
   <hr className="w-24 border-t-4 border-[#39bdf5] mx-auto my-4" />
   <p className="text-xl md:text-2xl text-white/80">
