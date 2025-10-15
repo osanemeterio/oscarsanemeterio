@@ -437,48 +437,56 @@ function App() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Mis reflexiones
             </h2>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              Reflexiones sobre comunicación, inteligencia artificial y el futuro del trabajo
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            {/* Entrada sobre dircom */}
-            <Link
-              to="/blog/dircom-fuera-cocina"
-              className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
-            >
-              <h3 className="text-xl font-bold text-white mb-3">
-                Un dircom fuera de la cocina es un dircom a medias
-              </h3>
-              <p className="text-white/90 mb-4 leading-relaxed">
-                En España, solo un tercio de los directores de comunicación participa en los comités ejecutivos de sus empresas, frente al 60–70 % en Reino Unido y Estados Unidos. El informe Estado de la Comunicación en España 2025 confirma un retraso que no es cultural, sino competitivo.
-              </p>
-              <span className="text-[#39bdf5] font-medium">Leer más →</span>
-            </Link>
+           <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+  Reflexiones sobre comunicación, inteligencia artificial y el futuro del trabajo
+</p>
+</div>
 
-           <article className="...">
-  <h3>Periodismo en modo supervivencia</h3>
-  <p>Credibilidad frente al algoritmo. Entre el 40% y el 61% del público ya utiliza IA generativa para informarse.</p>
-  <a href="/blog/periodismo-supervivencia">Leer más →</a>
-</article>
-          </div>
-          
-          <div className="slide-up bg-white/10 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Accede a todos mis contenidos
-            </h3>
-            <p className="text-white/90 mb-6 leading-relaxed">
-              Encuentra mis artículos, reflexiones y el podcast en mis diferentes plataformas
-            </p>
-            <div className="space-y-4">
-              <Link
-                to="/blog"
-                className="btn-primary inline-flex items-center space-x-2 text-lg w-full justify-center"
-              >
-                <BookOpen className="w-5 h-5" />
-                <span>Ver Blog</span>
-              </Link>
+<div className="grid md:grid-cols-2 gap-8 mb-12">
+  {/* Entrada sobre dircom */}
+  <Link
+    to="/blog/dircom-fuera-cocina"
+    className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
+  >
+    <h3 className="text-xl font-bold text-white mb-3">
+      Un dircom fuera de la cocina es un dircom a medias
+    </h3>
+    <p className="text-white/90 mb-4 leading-relaxed">
+      En España, solo un tercio de los directores de comunicación participa en los comités ejecutivos de sus empresas, frente al 60–70 % en Reino Unido y Estados Unidos. El informe Estado de la Comunicación en España 2025 confirma un retraso que no es cultural, sino competitivo.
+    </p>
+    <span className="text-[#39bdf5] font-medium">Leer más →</span>
+  </Link>
+
+  {/* Entrada Periodismo en modo supervivencia */}
+  <Link
+    to="/blog/periodismo-supervivencia"
+    className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
+  >
+    <h3 className="text-xl font-bold text-white mb-3">
+      Periodismo en modo supervivencia: credibilidad frente al algoritmo
+    </h3>
+    <p className="text-white/90 mb-4 leading-relaxed">
+      Entre el 40 % y el 61 % del público ya utiliza IA generativa para informarse. El periodismo debe reinventarse dentro de los espacios algorítmicos.
+    </p>
+    <span className="text-[#39bdf5] font-medium">Leer más →</span>
+  </Link>
+</div>
+
+<div className="slide-up bg-white/10 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20 max-w-2xl mx-auto">
+  <h3 className="text-2xl font-bold text-white mb-4">
+    Accede a todos mis contenidos
+  </h3>
+  <p className="text-white/90 mb-6 leading-relaxed">
+    Encuentra mis artículos, reflexiones y el podcast en mis diferentes plataformas
+  </p>
+  <div className="space-y-4">
+    <Link
+      to="/blog"
+      className="btn-primary inline-flex items-center space-x-2 text-lg w-full justify-center"
+    >
+      <BookOpen className="w-5 h-5" />
+      <span>Ver Blog</span>
+    </Link>
               <a
                 href="https://osanemeterio.substack.com/"
                 target="_blank"
