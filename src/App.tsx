@@ -18,6 +18,7 @@ import DividendoOcultoComunicacion from './pages/DividendoOcultoComunicacion'
 import ComunicacionInterna from './pages/ComunicacionInterna'
 import RetenerTalento from './pages/RetenerTalento'
 import DircomFueraCocina from './pages/DircomFueraCocina'
+import PeriodismoSupervivencia from './pages/PeriodismoSupervivencia'
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path="/blog/comunicacion-interna" element={<ComunicacionInterna />} />
         <Route path="/blog/retener-talento" element={<RetenerTalento />} />
         <Route path="/blog/dircom-fuera-cocina" element={<DircomFueraCocina />} />
+        <Route path="/blog/periodismo-supervivencia" element={<PeriodismoSupervivencia />} />
       </Routes>
     </Router>
   )
