@@ -457,19 +457,11 @@ function App() {
               <span className="text-[#39bdf5] font-medium">Leer más →</span>
             </Link>
 
-            {/* Entrada sobre retener talento */}
-            <Link
-              to="/blog/retener-talento"
-              className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
-            >
-              <h3 className="text-xl font-bold text-white mb-3">
-                Retener talento empieza por comunicar mejor
-              </h3>
-              <p className="text-white/90 mb-4 leading-relaxed">
-                La mayoría de empleados no se marcha de un día para otro: primero desconectan. Este proceso invisible suele tener un origen común: la falta de comunicación interna efectiva que rompe el vínculo emocional.
-              </p>
-              <span className="text-[#39bdf5] font-medium">Leer más →</span>
-            </Link>
+           <article className="...">
+  <h3>Periodismo en modo supervivencia</h3>
+  <p>Credibilidad frente al algoritmo. Entre el 40% y el 61% del público ya utiliza IA generativa para informarse.</p>
+  <a href="/blog/periodismo-supervivencia">Leer más →</a>
+</article>
           </div>
           
           <div className="slide-up bg-white/10 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20 max-w-2xl mx-auto">
