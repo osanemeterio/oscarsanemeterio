@@ -1,0 +1,69 @@
+import { Link } from "react-router-dom";
+
+type ArticleLayoutProps = {
+  title: string;
+  subtitle?: string;
+  backTo?: string;
+  children: React.ReactNode;
+  ctaHref?: string;
+  ctaLabel?: string;
+};
+
+export default function ArticleLayout({
+  title,
+  subtitle = "Nueva reflexión • Óscar San Emeterio",
+  backTo = "/",
+  children,
+  ctaHref,
+  ctaLabel = "Leer artículo completo en Substack",
+}: ArticleLayoutProps) {
+  return (
+    <div className="min-h-screen bg-white">
+      <div className="bg-[#5a5b7f]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="py-3">
+            <Link
+              to={backTo}
+              className="inline-flex items-center gap-2 text-white/90 hover:text-white transition"
+            >
+              <span className="text-xl">←</span> Volver a la página principal
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <section className="bg-[#5a5b7f] relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#5a5b7f] via-[#5a5b7f] to-[#4a4b6f] opacity-90" />
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
+            {title}
+          </h1>
+          <p className="mt-3 text-white/90 text-base sm:text-lg">{subtitle}</p>
+        </div>
+      </section>
+
+      <main className="max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-14 space-y-8">
+        {children}
+
+        <div className="flex flex-col sm:flex-row gap-4 sm:items-center">
+          {ctaHref && (
+            <a
+              href={ctaHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-4 py-2 rounded-xl border bg-black text-white hover:opacity-90"
+            >
+              {ctaLabel}
+            </a>
+          )}
+          <Link
+            to={backTo}
+            className="inline-flex items-center justify-center px-4 py-2 rounded-xl border hover:bg-gray-50"
+          >
+            ← Volver a la página principal
+          </Link>
+        </div>
+      </main>
+    </div>
+  );
+}
