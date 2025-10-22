@@ -12,14 +12,14 @@ import MentoriaSeguimiento from './pages/MentoriaSeguimiento'
 import PuntoYAparte from './pages/PuntoYAparte'
 import Blog from './pages/Blog'
 import ComunicacionInstitucionalIA from './pages/ComunicacionInstitucionalIA'
-import ONGsCantabriaImpacto from './pages/ONGsCantabriaImpacto.tsx'
+import ONGsCantabriaImpacto from './pages/ONGsCantabriaImpacto'   // <- sin .tsx en el import
 import ManualesIA from './pages/ManualesIA'
 import DividendoOcultoComunicacion from './pages/DividendoOcultoComunicacion'
 import ComunicacionInterna from './pages/ComunicacionInterna'
 import RetenerTalento from './pages/RetenerTalento'
 import DircomFueraCocina from './pages/DircomFueraCocina'
 import PeriodismoSupervivencia from './pages/PeriodismoSupervivencia'
-import ConfianzaNoFirmaNoticia from './pages/ConfianzaNoFirmaNoticia'
+import ConfianzaNoFirmaNoticia from './pages/ConfianzaNoFirmaNoticia' // <- nombre correcto
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/consultoria" element={<Consultoria />} />
-        <Route path="/ConsultoriaEnComunicacion" element={<ConsultoriaEnComunicacion />} />
+        <Route path="/consultoria-en-comunicacion" element={<ConsultoriaEnComunicacion />} />
         <Route path="/capacitacion-ia" element={<CapacitacionIA />} />
         <Route path="/produccion-contenidos" element={<ProduccionContenidos />} />
         <Route path="/comunicacion-institucional" element={<ComunicacionInstitucional />} />
@@ -35,9 +35,8 @@ function App() {
         <Route path="/creacion-contenidos" element={<CreacionContenidos />} />
         <Route path="/talleres-practicos" element={<TalleresPracticos />} />
         <Route path="/mentoria-seguimiento" element={<MentoriaSeguimiento />} />
+        <Route path="/blog" element={<Blog />} />  {/* <- deja solo esta */}
         <Route path="/blog/punto-y-aparte" element={<PuntoYAparte />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog" element={<Blog />} />
         <Route path="/blog/comunicacion-institucional-ia" element={<ComunicacionInstitucionalIA />} />
         <Route path="/blog/ongs-cantabria-impacto" element={<ONGsCantabriaImpacto />} />
         <Route path="/manuales-ia" element={<ManualesIA />} />
