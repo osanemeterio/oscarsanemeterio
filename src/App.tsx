@@ -19,7 +19,7 @@ import ComunicacionInterna from './pages/ComunicacionInterna'
 import RetenerTalento from './pages/RetenerTalento'
 import DircomFueraCocina from './pages/DircomFueraCocina'
 import PeriodismoSupervivencia from './pages/PeriodismoSupervivencia'
-import ConfianzaNoFimaNoticia from './pages/ConfianzaNoFirmaNoticia'
+import ConfianzaNoFirmaNoticia from './pages/ConfianzaNoFirmaNoticia'
 
 function App() {
   return (
@@ -46,7 +46,7 @@ function App() {
         <Route path="/blog/retener-talento" element={<RetenerTalento />} />
         <Route path="/blog/dircom-fuera-cocina" element={<DircomFueraCocina />} />
         <Route path="/blog/periodismo-supervivencia" element={<PeriodismoSupervivencia />} />
-        <Route path="/blog/confianza-no-firma-noticia" element={<ConfianzaNoFimaNoticia />} />
+        <Route path="/blog/confianza-no-firma-noticia" element={<ConfianzaNoFirmaNoticia />} />
       </Routes>
     </Router>
   )
