@@ -444,18 +444,18 @@ function App() {
 
 <div className="grid md:grid-cols-2 gap-8 mb-12">
   {/* Entrada sobre dircom */}
-  <Link
-    to="/blog/dircom-fuera-cocina"
-    className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
-  >
-    <h3 className="text-xl font-bold text-white mb-3">
-      Un dircom fuera de la cocina es un dircom a medias
-    </h3>
-    <p className="text-white/90 mb-4 leading-relaxed">
-      En España, solo un tercio de los directores de comunicación participa en los comités ejecutivos de sus empresas, frente al 60–70 % en Reino Unido y Estados Unidos. El informe Estado de la Comunicación en España 2025 confirma un retraso que no es cultural, sino competitivo.
-    </p>
-    <span className="text-[#39bdf5] font-medium">Leer más →</span>
-  </Link>
+<Link
+  to="/blog/confianza-no-firma-noticia"
+  className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
+>
+  <h3 className="text-xl font-bold text-white mb-3">
+    La confianza ya no firma las noticias
+  </h3>
+  <p className="text-white/90 mb-4 leading-relaxed">
+    Cuando pedimos a la IA que nos explique el mundo ganamos contexto, pero se diluye la voz que firma. ¿Qué pasa con la confianza si lo que leemos no viene de un autor reconocible?
+  </p>
+  <span className="text-[#39bdf5] font-medium">Leer más →</span>
+</Link>
 
   {/* Entrada Periodismo en modo supervivencia */}
   <Link
