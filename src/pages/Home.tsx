@@ -279,55 +279,6 @@ function App() {
       </section>
 
       {/* Oferta Formativa Section */}
-      {/* GPT-5 Course Special Banner */}
-      <section className="py-12 px-4 bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-700 relative overflow-hidden">
-        <div id="curso-gpt5" className="absolute -top-20"></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-600/90 via-blue-600/90 to-indigo-700/90"></div>
-        <div className="absolute top-0 left-0 w-full h-full">
-          <div className="absolute top-10 left-10 w-20 h-20 bg-yellow-400/20 rounded-full animate-pulse"></div>
-          <div className="absolute bottom-10 right-10 w-16 h-16 bg-pink-400/20 rounded-full animate-bounce"></div>
-          <div className="absolute top-1/2 left-1/4 w-12 h-12 bg-green-400/20 rounded-full animate-ping"></div>
-        </div>
-        
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <div className="mb-6">
-            <span className="inline-block bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-bold px-6 py-2 rounded-full text-sm uppercase tracking-wide animate-pulse shadow-lg">
-              🚀 NUEVO CURSO
-            </span>
-          </div>
-          
-          <div className="mb-8">
-            <div className="inline-block p-4 bg-white/10 backdrop-blur-sm rounded-full mb-4 animate-bounce">
-              <Brain className="w-12 h-12 text-yellow-400" />
-            </div>
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
-              IA Práctica en la Era
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-400 to-purple-400 animate-pulse">
-                GPT-5
-              </span>
-            </h2>
-            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              Prepárate para la revolución que viene. Descubre cómo GPT-5 cambiará para siempre 
-              la forma de trabajar con inteligencia artificial.
-            </p>
-          </div>
-          
-          <div className="space-y-4">
-            <a
-              href="https://oscarsanemeterio.es/IA-practica-en-la-era-GPT-5.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 hover:from-yellow-300 hover:via-orange-400 hover:to-red-400 text-black font-bold px-8 py-4 rounded-full text-lg shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse hover:animate-none"
-            >
-              📚 Descargar Información del Curso
-            </a>
-            <p className="text-white/80 text-sm">
-              ⏰ Próximo lanzamiento - ¡Sé el primero en conocer los detalles!
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
