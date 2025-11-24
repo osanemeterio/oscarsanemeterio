@@ -19,7 +19,8 @@ import ComunicacionInterna from './pages/ComunicacionInterna'
 import RetenerTalento from './pages/RetenerTalento'
 import DircomFueraCocina from './pages/DircomFueraCocina'
 import PeriodismoSupervivencia from './pages/PeriodismoSupervivencia'
-import ConfianzaNoFirmaNoticia from './pages/ConfianzaNoFirmaNoticia' // <- nombre correcto
+import ConfianzaNoFirmaNoticia from './pages/ConfianzaNoFirmaNoticia'
+import NuevosManualesIA from './pages/NuevosManualesIA' // <- nombre correcto
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
         <Route path="/blog/dircom-fuera-cocina" element={<DircomFueraCocina />} />
         <Route path="/blog/periodismo-supervivencia" element={<PeriodismoSupervivencia />} />
         <Route path="/blog/confianza-no-firma-noticia" element={<ConfianzaNoFirmaNoticia />} />
+        <Route path="/nuevos-manuales-ia" element={<NuevosManualesIA />} />
       </Routes>
     </Router>
   )
