@@ -436,20 +436,6 @@ function App() {
 </div>
 
 <div className="grid md:grid-cols-2 gap-8 mb-12">
-  {/* Entrada sobre dircom */}
-<Link
-  to="/blog/confianza-no-firma-noticia"
-  className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
->
-  <h3 className="text-xl font-bold text-white mb-3">
-    La confianza ya no firma las noticias
-  </h3>
-  <p className="text-white/90 mb-4 leading-relaxed">
-    Cuando pedimos a la IA que nos explique el mundo ganamos contexto, pero se diluye la voz que firma. ¿Qué pasa con la confianza si lo que leemos no viene de un autor reconocible?
-  </p>
-  <span className="text-[#39bdf5] font-medium">Leer más →</span>
-</Link>
-
   {/* Entrada Periodismo en modo supervivencia */}
   <Link
     to="/blog/periodismo-supervivencia"
