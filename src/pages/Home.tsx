@@ -436,6 +436,20 @@ function App() {
 </div>
 
 <div className="grid md:grid-cols-2 gap-8 mb-12">
+  {/* Entrada Contenido, medios y reputación */}
+  <Link
+    to="/blog/contenido-medios-reputacion"
+    className="slide-up bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 block text-left"
+  >
+    <h3 className="text-xl font-bold text-white mb-3">
+      Contenido, medios y reputación: cuando la estrategia desaparece
+    </h3>
+    <p className="text-white/90 mb-4 leading-relaxed">
+      La comunicación corporativa pierde su capacidad estratégica cuando se reduce a ejecución táctica. Sin integración en decisiones clave, las organizaciones erosionan su reputación.
+    </p>
+    <span className="text-[#39bdf5] font-medium">Leer más →</span>
+  </Link>
+
   {/* Entrada Periodismo en modo supervivencia */}
   <Link
     to="/blog/periodismo-supervivencia"

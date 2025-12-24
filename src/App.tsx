@@ -21,6 +21,7 @@ import DircomFueraCocina from './pages/DircomFueraCocina'
 import PeriodismoSupervivencia from './pages/PeriodismoSupervivencia'
 import ConfianzaNoFirmaNoticia from './pages/ConfianzaNoFirmaNoticia'
 import NuevosManualesIA from './pages/NuevosManualesIA' // <- nombre correcto
+import ContenidoMediosReputacion from './pages/ContenidoMediosReputacion'
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
         <Route path="/blog/dircom-fuera-cocina" element={<DircomFueraCocina />} />
         <Route path="/blog/periodismo-supervivencia" element={<PeriodismoSupervivencia />} />
         <Route path="/blog/confianza-no-firma-noticia" element={<ConfianzaNoFirmaNoticia />} />
+        <Route path="/blog/contenido-medios-reputacion" element={<ContenidoMediosReputacion />} />
         <Route path="/nuevos-manuales-ia" element={<NuevosManualesIA />} />
       </Routes>
     </Router>
