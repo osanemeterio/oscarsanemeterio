@@ -28,9 +28,7 @@ export default function ContenidoMediosReputacionPage() {
             <div className="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100">
               <h2 className="text-2xl font-bold text-[#5a5b7f] mb-4">Resumen</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                La comunicación corporativa en crisis no desaparece, sino que pierde su capacidad estratégica cuando
-                se reduce a ejecución táctica. Sin integración en decisiones clave, las organizaciones pueden ganar
-                visibilidad inmediata pero erosionar su reputación a medio plazo.
+                El verdadero problema no es la muerte del PR, sino la confusión entre comunicación estratégica y ejecución táctica. Las organizaciones reducen la comunicación a tareas operativas, perdiendo su función directiva. Sin integración en decisiones clave, pueden ganar visibilidad inmediata pero erosionar su reputación a medio plazo. La pregunta clave: ¿comunicar para salir hoy o sostener una posición mañana?
               </p>
             </div>
           </div>
