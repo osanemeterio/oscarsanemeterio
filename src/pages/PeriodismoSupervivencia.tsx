@@ -28,7 +28,7 @@ export default function PeriodismoSupervivenciaPage() {
             <div className="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100">
               <h2 className="text-2xl font-bold text-[#5a5b7f] mb-4">Resumen</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Entre el 40% y 61% del público ya usa IA generativa para informarse. El periodismo compite con creadores que dominan algoritmos pero carecen de rigor. La profesión enfrenta salarios bajos e inestabilidad mientras pierde autoridad. La solución no es resistir el cambio tecnológico, sino reimaginar el periodismo dentro de espacios algorítmicos, definiendo estándares de credibilidad que la IA debe respetar.
+                Hasta el 61% del público usa IA para informarse. El periodismo compite con creadores algorítmicos sin rigor. La solución: reimaginar la profesión dentro de espacios algorítmicos, definiendo estándares de credibilidad que la IA deba respetar.
               </p>
             </div>
           </div>
